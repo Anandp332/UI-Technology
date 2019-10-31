@@ -1,0 +1,61 @@
+Handling Userdefine Exception:
+                               js provide a feature of throwing and Handling Userdefine Exceptions using throws keyword .
+Syntax:
+try{
+    ...
+    ...
+    throw "<msg>" ; //From here controller will automatically jump to catch block to handle user defined Exception.
+    ...
+} 
+catch(e){
+...
+...// set of instruction to handle userdefine Exception.
+}
+
+
+Closures:
+            A feature been supported in js using which we could able add security to js code or data .
+1> closure is a self invoked funtion get import automatically when the controller reaches to it .
+2> All the data been defined within a closure becomes private data to outside closure .
+
+
+Steps to be followed to access closure data outside of the closure .
+Step1> Create an assign a variable to a closure .
+Step2> All the closure data which need to be accessable outside of the closure has to be returned as a json object from the closure.
+Step> we can make use of returned object data from the closure , from outside of the closure using closure name.
+Syntax:
+
+//Closure Defination 
+(funtion(){
+    var a = 10; //can not be accessable outside of closure
+    ...
+    funtion sample(){ // can not be accessable 
+....
+    }
+
+    var data = { //can not be }
+
+
+})();
+// none of the data been defined in the above closure can not be accessable outside of the closure
+
+Example to create a closure whose data can be accessable outside  of the closure ;
+
+var userUtils = (funtion(){
+    var a =10;  // can not be accessable outside of closure
+    funtion sample(){ // can not be accessable 
+....
+    }
+
+    var data = { //can not be }
+ return {
+     // all the data under this object can be accessable outside of closure name.
+     count: 20,
+     displaydata:funtion(){
+         ....
+     }
+     ....
+
+ }
+
+})(<optional params)

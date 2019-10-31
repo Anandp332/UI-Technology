@@ -1,0 +1,141 @@
+problem1 :
+using html:
+<input type="button" class="btn" value="Button 1">
+<input type="button" class="btn gray" value="Button 2">
+using css:
+.btn {
+    /* Add some space to the right of each button (so they don't touch) */
+    margin-right: 10px;
+    /* Add some space around the text inside the button */
+    padding: 8px 15px;
+
+    color: white;
+    background-color: #3498db;
+
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    border: none;
+    /* rounded corners */
+    border-radius: 5px;
+}
+
+/* Style differently when mouse is hovering over button */
+.btn:hover {
+    background-color: #3cb0fd;
+    /* change the mouse cursor */
+    cursor: pointer;
+}
+
+.btn.gray {
+    background-color: #737373;
+}
+
+.btn.gray:hover {
+    background-color: #8c8c8c;
+}
+
+
+problem2: 
+using html:
+<div id="header">
+	<a id="logo" href="/">
+        <img src="https://www.delidded.com/logo.png" alt="Delidded.com Logo" height="36">
+    </a>
+
+    <!-- Using ul tag to hold menu links, which makes them easier to style. -->
+	<ul id="menu">
+		<li><a href="/html/">HTML</a></li>
+		<li><a href="/css/">CSS</a></li>
+		<li><a href="/javascript/">JavaScript</a></li>
+	</ul>
+
+    <!-- 2nd menu that will be on the right side of the header -->
+	<ul id="menu-right">
+		<li><a href="/login/">Login</a></li>
+	</ul>
+</div>
+
+<div id="main">
+	<h2>Delidded Web Design</h2>
+
+	<p>Welcome to <span class="domain">delidded.com</span>.</p>
+</div>
+
+using css:
+
+/*
+The body tag has some margin by default on most browsers,
+which will make our blue header have some white space around the edges,
+so we're removing the margin.
+*/
+body {
+	margin: 0;
+}
+
+#header {
+	background-color: #2DAACD;
+	height: 40px;
+}
+
+/* Add some space on each side of the logo */
+#logo {
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+/* Remove default border around images on some browsers */
+#logo img {
+	border: none;
+}
+
+/* Style both of the menus in the header */
+#header ul {
+	margin: 0;
+	padding: 0;
+
+    /* Allow the menu to sit next to the logo (instead of its own line) */
+	display: inline-block;
+
+    /* Align menus at the top of header,
+       so we can center the link text later. */
+	vertical-align: top;
+}
+
+/* Style the li tags holding the menu links */
+#header ul li {
+    /* Add some space to the right of each menu link */
+	margin-right: 20px;
+
+    /* Display menu items next to each other horizontally (instead of vertically) */
+	display: inline-block;
+
+    /* Make the line-height for the menu links the same height as #header,
+       which will center the text vertically. */
+	line-height: 40px;
+}
+
+/* Style all links in the header */
+#header a {
+	color: white;
+
+    /* Remove the default underline on links. */
+	text-decoration: none;
+}
+
+/* Add some space around the text in the main section */
+#main {
+	padding: 10px;
+}
+
+/* Move the Login menu to the right side of the header */
+#menu-right {
+    float: right;
+}
+
+/* Style our domain name */
+.domain {
+	color: green;
+	font-weight: bold;
+}

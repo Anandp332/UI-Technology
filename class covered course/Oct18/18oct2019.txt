@@ -1,0 +1,14 @@
+Inheritance Concept::-->
+                        __proto__. 
+                        this operator(current )
+single : single existing object 
+multiple inheritance: multiple existing object(indirectly exist not directly)
+data imigrity : (read about it)
+
+
+inheritance bw static object and dynamic object:
+                                                
+>selectedindex()
+>object.create() reference of object not copying 
+inheritance bw 2 dynamic object:
+                                class

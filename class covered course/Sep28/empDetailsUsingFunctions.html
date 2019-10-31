@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var empname, empGender, empBSal, pf, hra, tSal , taxAmount;
+			function readEmpData() {
+				empname = prompt("Enter employee name");
+				empGender = prompt("enter emp gender");
+				empBSal = prompt("Enter basic sal");
+				empBSal = parseInt(empBSal);
+			}
+
+			function getPFAndHra() {
+				pf = (empBSal * 14 ) / 100;
+				hra = (empBSal * 25 ) / 100;
+			}
+
+			function getTotalSal() {
+				tSal = pf + hra + empBSal;
+			}
+			function getTotalTax() {
+				getPFAndHra();
+				getTotalSal();
+				var tax = 0;
+				if (empGender == 'Male') {
+					if (tSal > 50000) {
+						tax = 10;
+					} else {
+						tax = 5
+					}
+				} else { // female
+					if (tSal > 50000){
+						tax = 5;
+					} else {
+						tax = 0
+					}
+				}
+				taxAmount = (tax * tsal)/100;
+			}
+			readEmpData();
+			getTotalTax();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Inhrtnce btwn static and Dynamic Object
+		</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<ul>
+				<li class="title">
+					ABC Schools - Student Registration Block
+				</li>
+				<li>
+					Enter Student Name: <input type="text" id="uname" onkeypress="validateData(event)">
+					<div class="errblock">
+						Name is mandtry
+					</div>
+				</li>
+				<li>
+					Age: <input type="text" id="uAge">
+				</li>
+				<li>
+					Country: 
+					<select id="ucountry">
+						<option>India</option>
+						<option>China</option>
+						<option>Japan</option>
+						<option>USA</option>
+					</select>
+				</li>
+				<li>
+					Class to get Admission: 
+					<select class="uclass">
+						<option>Btech</option>
+						<option>MCA</option>
+						<option>MBA</option>
+						<option>Degree</option>
+					</select>
+				</li>
+				<li>
+					<input type="button" value="ADD Student"  onclick="saveDetails()">
+				</li>
+			</ul>
+		</div>
+		<div class="detailsContainer"></div>
+		<script type="text/javascript">
+			 function validateData(event){
+			 	console.log(event);
+			 }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,181 @@
+.block {
+    height: 5040px;
+    width: 270px;
+    background: pink;
+    float: left;
+}
+
+.block1 {
+    height: auto;
+    overflow: auto;
+    width: 270px;
+    background: linear-gradient(red, yellow, orange, green);
+    float: left;
+}
+
+.cls {
+    background: li;
+    color: red;
+    height: 500px;
+    float: left;
+    width: 350px;
+    border: 2px solid;
+    border-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.cls1 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    transform: scale(0.7, 0.7);
+    height: 400px;
+    width: 360px;
+    float: left;
+}
+
+.cls3 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    height: 300px;
+    width: 280px;
+    float: left;
+}
+
+.cls4 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    height: 270px;
+    width: 210px;
+    float: left;
+}
+
+.cls5 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    height: 230px;
+    width: 210px;
+    float: left;
+}
+
+.cls6 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    height: 210px;
+    width: 260px;
+    float: left;
+}
+
+.cls8 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    width: 300px;
+    float: left;
+    height: 300px;
+}
+
+.cls10 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    width: 147px;
+    float: left;
+    height: 300px;
+}
+
+.foot1 {
+    background: linear-gradient(90deg, red, yellow, orange, green);
+    color: white;
+    text-align: center;
+}
+
+.foot {
+    background: linear-gradient(90deg, red, yellow, orange, green);
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 720px;
+}
+
+.cls11 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    width: 120px;
+    float: left;
+    height: 300px;
+}
+
+.cls9 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    width: 248px;
+    float: left;
+    height: 300px;
+}
+
+.cls7 {
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    height: 300px;
+    width: 190px;
+    float: left;
+}
+
+body {
+    background-image: radial-gradient(red, yellow, green);
+}
+
+.cls2 {
+    background-image: radial-gradient(red, yellow, blue);
+    height: 80px;
+    text-align: center;
+    width: 250px;
+    float: left;
+    font-size: 160%;
+}
+
+h1 {
+    color: red;
+    background: radial-gradient( yellow, white, orange, pink);
+    width: 1340px;
+    text-align: center;
+    height: 100px;
+}
+
+.hd {
+    background: repeating-linear-gradient(90deg, pink, red, orange, yellow, pink);
+    height: 150px;
+    width: 1350px;
+}
+
+.blk {
+    height: 1510px;
+    width: 273px;
+    background: repeating-linear-gradient(90deg, blue, yellow);
+    float: left;
+}
+
+form {
+    text-align: center;
+}
+
+.logo {
+    background: url("/home/anand/Full Stack With UI/Assignments/project1/images/big_bazar.jpg");
+    float: left;
+    height: 30px;
+    width: 125px;
+    position: auto;
+}
+
+a {
+    color: rgb(6, 109, 109);
+    text-align: center;
+}
+
+.pgcls1 {
+    background: linear-gradient(red, yellow, orange, green);
+    width: 400px;
+    height: 400px;
+    float: right;
+    color: rgb(6, 109, 109);
+    font: italic bold 30px/45px Georgia, serif;
+}
+
+.sbmt {
+    height: auto;
+    width: auto;
+    font: italic bold 30px/45px Georgia, serif;
+    background: brown;
+    color: green;
+}

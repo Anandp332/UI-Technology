@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment6</title>
+	<link rel="stylesheet" type="text/css" href="my_style.css">
+</head>
+<body>
+	<div class="header"><span style="font-size: 30px;"><strong> STUDENT DETAILS</strong></span></div>
+	<table >
+		<thead>
+			<tr>
+				<th>S.No.</th>
+				<th>Name</th>
+				<th>Photo</th>
+				<th>Location</th>
+				<th>Marks</th>
+			</tr>
+		</thead class="table_1">
+		<tbody>
+			<tr>
+				<td>1</td>
+				
+				<td>Vivaan Acharya</td>
+				<td><div class="pic1" style="float:left; background-position: 183px 180px"></div></td>
+				<td>Hyderabad(India)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>96</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>93</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>98</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>95</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>98</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>2</td>
+			<td>Mia Benjamin</td>
+				<td><div class="pic1" style="float: left; background-position: -356px 181px;"></div></td>
+				<td>Istanbul(Turkey)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>98</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>92</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>99</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>91</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>94</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>3</td>
+			<td>Sophia Logan</td>
+				<td><div class="pic1" style="float: left; background-position: -472px 179px; "></div></td>
+				<td>Sydney(Australia)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>93</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>92</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>98</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>93</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>97</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>4</td>
+			<td>Amelia Elijah</td>
+				<td><div class="pic1" style="float: left; background-position:-380px -1px;"></div></td>
+				<td>Boston(America)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>93</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>97</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>97</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>92</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>95</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>98</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>5</td>
+			<td>Anshuman Rana</td>
+				<td><div class="pic1" style="float: left; background-position: 253px -1px;"></div></td>
+				<td>Delhi(India)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>96</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>95</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>93</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>94</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>97</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>6</td>
+			<td>Wang Li</td>
+				<td><div class="pic1" style="float: left; background-position: -116px 180px;"></div></td>
+				<td>Xiamen(China)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>92</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>96</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>95</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>97</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>92</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>7</td>
+			<td>James Johnson</td>
+				<td><div class="pic1" style="float: left; background-position: -189px 356px;"></div></td>
+				<td>Bahamas(America)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>97</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>95</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>92</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>91</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>91</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>96</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>8</td>
+			<td>Aiden Williams</td>
+				<td><div class="pic1" style="float: left; background-position: -235px 174px;"></div></td>
+				<td>Sheffield(England)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>93</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>92</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>97</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>92</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>94</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>98</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>9</td>
+			<td>Emma Liam</td>
+				<td><div class="pic1  " style="float: left; "></div></div></td>
+				<td>Texas(America)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>96</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>91</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>95</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>96</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>93</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>91</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<td>10</td>
+			<td>Olivia Noah</td>
+				<td><div class="pic1" style="float: left;background-position: 0px 180px;"></div></td>
+				<td>Arizona(America)</td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Total Marks</th>
+								<th>Obtained Marks</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr>
+								<td>Introduction to programming</td>
+								<td>100</td>
+								<td>97</td>
+							</tr>
+							<tr>
+								<td>Database Management System</td>
+								<td>100</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td>Concrete Mathmatics</td>
+								<td>100</td>
+								<td>99</td>
+							</tr>
+							<tr>
+								<td>Mathmatics Foundation</td>
+								<td>100</td>
+								<td>95</td>
+							</tr>
+							<tr>
+								<td>Graph Theory</td>
+								<td>100</td>
+								<td>92</td>
+							</tr><tr>
+								<td>Computer Orgnization</td>
+								<td>100</td>
+								<td>90</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+	<footer class="foot">
+        <p>
+            <center>
+                @cOPYrIGHT_2019
+            </center>
+        </p>
+    </footer>
+</body>
+</html>

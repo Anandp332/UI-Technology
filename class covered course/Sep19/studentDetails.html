@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Javascript Datatypes.
+		</title>
+	</head>
+	<body>
+		<div>JS Datatypes</div>
+		<script type="text/javascript">
+			console.log("about to perform")
+			var stdName, sAge, sGender; 
+			stdName = "Raj";
+			sAge = 10;
+			sGender = 'male';
+			var m1 = 90;
+			var m2 = 80;
+			var m3 = 70;
+			var m4 = 10;
+			var m5 = 40;
+			var total = 0, avg = 0;
+
+			total = m1 + m2 + m3 + m4 + m5;
+			avg = total / 5;
+
+			console.log("Student name  is " + stdName);
+			console.log("Student Age  is " + sAge);
+			console.log("Student gender " +  sGender);
+			console.log(" Total marks " + total);
+			console.log(" Avg marks " + avg);
+			if (avg >= 40) {
+				console.log("Student Got Passed");
+				if (avg >= 60) {
+					console.log("got First Class"); 
+					if (avg >= 90) {
+						console.log("You got Distiction");
+					}
+				} else if (avg >= 50){
+					console.log("got second class");
+				} else {
+					console.log("got Third class");
+				}
+			} else {
+				console.log("failed");
+			}
+			
+		</script>
+	</body>
+</html>
+
++

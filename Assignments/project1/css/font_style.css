@@ -1,0 +1,165 @@
+.foot,
+.hd {
+    width: 1350px;
+    margin: 2px;
+    height: 70px;
+    border: 2px solid;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.divtag {
+    background: radial-gradient(red, yellow, green, orange);
+    height: 700px;
+    text-align: center;
+    font: italic bold 12px/30px Georgia, serif;
+    border: 2px solid;
+    color: green;
+    width: 600px;
+    position: absolute;
+    left: 400px;
+    top: 70px;
+}
+
+body {
+    background: linear-gradient(90deg, yellow, green, orange, red);
+}
+
+.foot {
+    background: linear-gradient(90deg, red, yellow, orange, green);
+    color: white;
+    position: absolute;
+    left: 1px;
+    top: 820px;
+}
+
+.hd1 {
+    height: 145px;
+    color: red;
+    width: 800px;
+    font: italic bold 12px/30px Georgia, serif;
+}
+
+form {
+    text-align: center;
+}
+
+.l1 {
+    color: rgba(145, 0, 0, 0.815);
+    font: italic bold 25px/35px Georgia, serif;
+}
+
+p {
+    background: white;
+}
+
+h2 {
+    background: white;
+    float: left;
+}
+
+h3 {
+    float: left;
+}
+
+.logo {
+    background: url("/home/anand/Full Stack With UI/Assignments/project1/images/big_bazar.jpg");
+    float: left;
+    height: 30px;
+    width: 125px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.button1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30vh;
+    background: #00293c;
+    font-family: sans-serif;
+}
+
+a {
+    position: relative;
+    width: 140px;
+    height: 60px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateY(25deg);
+    transition: 5s;
+}
+
+a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #333;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+a span:nth-child(1) {
+    transform: translateZ(30px);
+    border-left: 6px solid #65cbf9;
+    border-right: 6px solid #65cbf9;
+}
+
+a span:nth-child(4) {
+    transform: translateZ(-20px);
+    border-left: 6px solid;
+    border-right: 6px solid;
+    background: cyan;
+}
+
+a span:nth-child(2),
+a span:nth-child(3) {
+    width: 20%;
+    height: 95%;
+    background: #0095d8;
+}
+
+a span:nth-child(2) {}
+
+a span:nth-child(3) {}
+
+a {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.ul1 {
+    margin: 0;
+    height: auto;
+    padding: 0;
+}
+
+.container {
+    width: 470px;
+    height: 30px;
+    margin: 350px auto 0;
+    display: flex;
+    font-size: 10px;
+}
+
+.container .box {
+    position: relative;
+    width: 160px;
+    height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0, 10px;
+    background: linear-gradient(90deg, red, yellow, blue);
+}

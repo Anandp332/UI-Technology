@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Swith case
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var fVal = prompt("Enter first value");
+			fVal = parseInt(fVal);
+			var sVal = prompt("Enter Second value");
+			sVal = parseInt(sVal);
+			var result = 0;
+
+			var userSelection = prompt("add/sub/div/mul")
+/*
+			if (userSelection == 'add') {
+				// perfoming addition.
+				result = fVal + sVal;
+				console.log("the sum is " + result);
+			} else if (userSelection == 'mul'){
+				// perfoming multiplication.
+				result = fVal * sVal;
+				console.log("the Mul is " + result);
+			} else if ( userSelection == 'sub') {
+				// perfoming substraction.
+				result = fVal - sVal;
+				console.log("the Sub is " + result);
+			} else if (userSelection == 'div') {
+				// perfoming Division.
+				result = fVal / sVal;
+				console.log("the Division is " + result);
+			} else {
+				console.log("Wrong selection")
+			} */
+
+			switch(userSelection) {
+				case 'add':
+					result = fVal + sVal;
+					console.log("the sum is " + result);
+					break;
+				case 'mul':
+					result = fVal * sVal;
+					console.log("the Mul is " + result);
+					break;
+				case 'div':
+					result = fVal / sVal;
+					console.log("the Division is " + result);
+					break;
+				case 'sub':
+					result = fVal - sVal;
+					console.log("the Sub is " + result);
+					break;
+				default:
+					console.log("wrong selection");
+			} 
+
+
+			
+
+			
+
+			
+		</script>
+	</body>
+</html>

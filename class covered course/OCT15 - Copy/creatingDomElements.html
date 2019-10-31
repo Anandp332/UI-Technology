@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.sample {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div>Creating dom elements</div>
+		<div id="container">
+			
+		</div>
+		<script type="text/javascript">
+			function addElement() {
+				var divTag = document.createElement("div");
+				divTag.innerHTML = 'Hello all ';
+				divTag.setAttribute("class", "sample");
+				divTag.setAttribute("id", "Test");
+				console.log(divTag);
+
+				document.querySelector("#container").appendChild(
+					divTag);
+				addSecondElement();
+			}
+
+			addElement();
+
+			function addSecondElement() {
+				var spantag = document.createElement("span");
+				spantag.innerText = "Am the child content";
+				document.querySelector("#Test").appendChild(spantag);
+			}
+		</script>
+	</body>
+</html>

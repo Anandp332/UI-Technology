@@ -1,0 +1,65 @@
+body{
+	width:1036.92px;
+	height: 1592.9px;
+	border-color: red;
+	background: url("1.jpg");
+	margin: 2px solid;
+}
+tr , th, table, td, tbody, thead{
+	
+	margin: 5px solid;
+
+}
+table{
+	background:pink;
+	border:5px;
+	border-color: red;
+}
+.table_1{
+	width: 100px;
+	height: 1500px;
+	background: rgba(90,10,2,80);
+}
+tbody{
+	background: rgb(0,10,100);
+	border-color: green;
+	border:5px;
+}
+th{
+	color: green;
+	background: red;
+	border-color: blue;
+	border:5px;
+
+}
+td{
+	color: red;
+	background: url("2.jpg");
+}
+ 
+        .pic1 {
+            background: url("cat.jpg");
+            width:120px;
+            height: 150px;
+            
+        }
+        .header {
+            text-align: center;
+            border: 5px solid;
+            border-color: green;
+            height: 40px;
+            background-image: url("download.jpeg");
+            background-color: red;
+            margin: 10px 0px 10px 0px;
+            width: auto;
+            color: orange;
+        }
+           .foot {
+        background-color: rgba(1, 26, 1, 0.966);
+        color: rgba(243, 19, 11, 0.781);
+        font-weight: bold;
+        font-size: large;
+        font-style: italic;
+        float: none;
+        
+    }

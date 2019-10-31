@@ -1,0 +1,3 @@
+document.getElementById('id name');
+document.getElementByClassname('class name');
+document.getElementBy

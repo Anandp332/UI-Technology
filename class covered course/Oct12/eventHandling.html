@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Event Handling
+		</title>
+		<style type="text/css">
+			li {
+				list-style: none;
+				border: 1px solid;
+				margin: 10px;
+				padding: 10px;
+			}
+			ul {
+				border: 2px solid;
+				width: 300px;
+				height: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			Demonstrating event handling.
+		</div>
+		<ul>
+			<li>
+				Enter first value: <input type="text" id="fval">
+			</li>
+			<li>
+				Enter second value: <input type="text" id="sval">
+			</li>
+			<li>
+				<input type="button" value="ADD" onclick="addValues(event);">	
+			</li>
+			<li>
+				The sum is: <span></span>
+			</li>
+			<li>
+				<input type="text" id="rblock">
+			</li>
+		</ul>
+		
+		<script type="text/javascript">
+			function addValues(e) {
+				console.log(e);
+				var a1 = document.querySelector("#fval").value;
+				a1 = parseInt(a1);
+				var a2 = document.querySelector('#sval').value;
+				a2 = parseInt(a2);
+				var result = a1 + a2;
+
+				console.log("tjhe sum is " +result);
+				document.querySelector("span").innerText  = "<b>"+result + '</b>';
+				document.querySelector("#rblock").value = result;
+			}
+			
+		</script>
+	</body>
+</html>

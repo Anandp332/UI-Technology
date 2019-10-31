@@ -1,0 +1,25 @@
+'ready' Method - Takes a callback function as a input and invokes the function only after the complete dom structure gets loaded.
+
+$(document).ready(function(){
+    ...
+    ...// set of instruction which gets executed only after the complete Dom structure gets loaded.
+});
+
+'load' Method  - Its almost like and ready method , where the only difference is, load method not just waits for the Dom structure 
+to gets loaded , but it even waits for complete resources on the page to loaded(image with huge size, heavy size js or css external files etc.)
+
+
+for js minifiers link: https://javascript-minifier.com
+
+
+loq
+
+
+jquery:
+
+1> ulTag.attr('class','block');
+2> span.addClass("stitle');
+3> append
+4> 
+
+

@@ -1,0 +1,69 @@
+Ul tag And Ol tag(unordered and ordered list):
+:::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> The 2 predefined tag used to combine multiple relative items as a block.
+li is a predefine tag used to add items under ul or ol tags.
+syntax: <ul>
+			<li>
+					......</li>
+					<li>.....</li>	
+					</ul>
+
+
+					<ol>
+
+						<li>
+							......</li>
+					<li>.....</li>	
+							</ol>
+
+
+note1: ul and ol tags works almost the same with the only difference is under ol tag all the list items will be bydefault assign with a serial number, under ul tag all the list items will be assign with a bullet symbol.
+note2: "list -style" is the css property threw which we coulsd control type of bullet or number ofbeing shown list items.
+Assignment4: 
+
+Html table: following are set of predefine tags being supported in html using which we could able show the content in the form of row wise and column wise.
+	table - parent tag used to hold all table content.
+	tr- Table row , used to hold an individual row.
+	td: table data, used to hold an individual cell data.
+	th: table header.
+	tbody: used to hold table body.
+	tfoot: used to hold table footer.
+	thead: used to hold table header.
+	Notes: Adding tbody , tfoot, thead is optional but its recommended to add.
+
+
+
+	Syntax: 
+		<table>
+	<thead>
+		<tr>
+			<th> heading 1 </th>
+			<th> heading 2 </th>
+		</tr>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<td> content 1</td>
+			<td> content 2</td>
+		</tr>
+		<tr>
+			<td> content 1</td>
+			<td> content 2</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td> ... </td>
+			<td> ... </td>
+			.....
+		</tr>
+	</tfoot>
+</table>
+
+
+note: "rowspan and colspan " are the 2 predefine attribute can be added only for td tag using which we could able to merge multiple cells to forms a single cell both in rowise and colwise. 
+mendetory : table, tr and td. 
+table: cellspacing and cellpaddind use only table.
+Note: it is recommended to not to use table tags within a page.
+2> using the table tag the page or dom structure need to span more time maintaining or creating the table structure which will decrease performance of a page.
+table->thead->tr->td->anything you want.  

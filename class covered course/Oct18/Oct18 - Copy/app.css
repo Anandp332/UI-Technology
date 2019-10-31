@@ -1,0 +1,33 @@
+.container {
+	border: 1px solid;
+	background: #ccc;
+	margin: 10px  auto;
+	padding: 10px;
+	width: 500px;
+}
+li {
+	list-style: none;
+	border: 1px solid #fff;
+	padding: 10px;
+}
+.title {
+	text-decoration: underline;
+	text-align: center;
+	font-weight: bold;
+	color: green;
+	font-size: 15px;
+}
+.detailsContainer {
+	border: 1px solid;
+	margin: 10px;
+	padding: 10px;
+}
+.block {
+	border: 1px solid;
+	margin: 10px;
+	padding: 5px;
+}
+.errblock {
+	color: red;
+	display: none;
+}

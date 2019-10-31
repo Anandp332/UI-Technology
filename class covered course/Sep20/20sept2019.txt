@@ -1,0 +1,51 @@
+Difference between == and === operators:--> both are comparison operators used to compare value of left side variable with right side variables, when the only difference is while comparing values == operator only check for equality of values where as === operator checks for value equality along with valuetype equality.
+example 
+		var a =10;
+		var b=30;
+		a==b-> returns false
+		var a=30;
+		var b=30;
+		a==b  -> returns true 
+
+		var a=10;
+		var b="10";
+		a==b  -> returns true
+		--------------------
+
+		var a=10;
+		var b=30;
+		a===b  -> returns false
+
+		var a=10;
+		var b="10";
+		a===b  -> returns false
+looping control structure : following are set of looping control structure being supported in javascript using which we could able to execute the set of instruction more than one without rewriting instruction .
+
+for loop:
+
+		while 
+		do while
+		for each
+		for in 
+		for off.
+
+example:
+		
+
+		q1> write a program to display values from 1 to 100.
+		q2> write a program to display the value from 99 to 48.
+		q3> write a program to display all the even number between 1 to 100.
+		q4> write a program to find sum of all odd numbers between 90 to 35.
+		q5> write a program to find sum of all even numbers from 1000 to 99.
+		q6> write a program to display table of 5 till 20.
+		5*1=5
+		5*2=10
+		5*3=15 like this .
+		q7> write a program to take a number and check wether it is prime number or not.
+----------------------------------------------------------------------------------------------
+
+take employee detail from user
+
+
+		
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Peforming DOM operations through Javascript.
+		</title>
+		<style type="text/css">
+			.test {
+				background: green;
+
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="CLICK" onclick="doOperations()">
+		<div  name="testsample"></div>
+		<script type="text/javascript">
+			var doOperations = function() {
+				var msg = "<b>Hello all, welcm back frm holidays</b>";
+				document.querySelector('div').innerHTML = msg;
+				// document.querySelector('div').innerText = msg;
+
+				document.querySelector('div').setAttribute("id", "sample");
+
+				document.querySelector('div').setAttribute("class", "test");
+
+				document.querySelector('div').style.border = '1px solid red';
+				var name = document.querySelector("div").getAttribute("name");
+				alert(name)
+			}
+		</script>
+	</body>
+</html>

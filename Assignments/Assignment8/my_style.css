@@ -1,0 +1,136 @@
+.block {
+	 			border: 2px solid;
+	 			width: 20px;
+	 			height: 20px;
+	 			padding: 10px;
+	 		}
+	 		.block1 {
+	 			 background: green;
+	 		}
+	 		.block2 {
+	 			background: blue;
+	 			position: absolute;
+	 			left:  8px; 			
+	 			right: 8px;
+	 			top: 8px;
+	 		}
+	 		.block3{
+	 			background: pink;
+	 			position: absolute;
+	 			float: right;
+	 			
+	 			left:  156px; 			
+	 			right: 0px;
+	 			top: 0px;
+	
+	 		}
+	 		.block5 {
+	 			background: pink;
+	 			position: absolute;
+	 			float: right;
+	 			
+	 			left:  156px; 			
+	 			right: 0px;
+	 			top: 156px;
+	 		}
+	 		.block6{
+	 			background: blue;
+	 			position: absolute;
+	 			float: right;
+	 			
+	 			left:  147px; 			
+	 			right: 0px;
+	 			top: 147px;
+	 		}
+	 		.block7{
+	 			 background: green;
+	 			 position: absolute;
+	 			 top: 156px;
+	 			 right:156px;
+
+	 		}
+	 		.block8{
+	 			background: blue;
+	 			position: absolute;
+	 			 top: 147px;
+	 			 right:147px;
+
+	 		}
+	 		.block9{
+	 			background: pink;
+	 			position: absolute;
+	 			top: 60px;
+	 			left:60px;
+	 			
+
+	 		}
+	 		.block10{
+	 		background: green;
+	 			position: absolute;
+	 			top: 60px;
+	 			left:104px;
+
+	 		}
+	 		.block11{
+	 		background: red;
+	 			position: absolute;
+	 			top: 104px;
+	 			left:104px;
+	 		}
+	 		.block12{
+	 		background: yellow;
+	 			position: absolute;
+	 			top: 104px;
+	 			left:60px;
+
+	 		}
+	 		.block13{
+	 			background: blue;
+	 			position: absolute;
+	 			top:86px;
+	 			left: 86px;
+	 			right: 86px;
+
+
+	 		}
+
+	 		.block4 {
+	 			background: blue;
+	 			position: absolute;
+	 			float: right;
+	 			left:  147px; 			
+	 			right: 0px;
+	 			top: 8px;
+	
+	 		}
+	 		.parentBlock {
+	 			background: rgba(100,10,20);
+	 			
+	 			width: 200px;
+	 			height: 200px;
+	 			position: relative;
+	 		}
+	 	.header {
+            text-align: center;
+            border: 5px solid;
+            border-color: pink;
+            height: 40px;
+            background-image: url("download.jpeg");
+            background-color: green;
+            margin: 10px 0px 10px 0px;
+            width: auto;
+            color: red;
+        }
+        .bd{
+        	background: rgba(100,10,20);
+        	height: 645px;
+        	width: 1020px
+        }
+         .foot {
+        background-color: rgba(1, 26, 1, 0.966);
+        color: rgba(243, 19, 11, 0.781);
+        font-weight: bold;
+        font-size: large;
+        font-style: italic;
+        float: none;
+        

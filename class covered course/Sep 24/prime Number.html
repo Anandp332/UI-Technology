@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Prime numbers
+		</title>
+	</head>
+	<body>
+		 <script type="text/javascript">
+		 	var n = prompt("enter a number");
+		 	n = parseInt(n);
+		 	var count = 0;
+		 	for(var i = 1; i <= n; i++) {
+		 		if (n  % i == 0 ) {
+		 			count++;
+		 		}
+		 		if (count >=3 ) {
+		 			break;
+		 		}
+		 	}
+		 	if (count == 2) {
+		 		console.log("its prime number");
+		 	} else {
+		 		console.log("NOT");
+		 	}
+		 	console.log("how many iterations happend - >" + i)
+		 </script>
+	</body>
+</html>

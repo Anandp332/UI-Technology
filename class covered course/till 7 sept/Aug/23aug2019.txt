@@ -1,0 +1,33 @@
+course will be cover:
+html, css, js ,advance js, jquerry, html5, css3, bootstrap,nodejs,mangodb,ecma6
+
+
+capable language to create a webpage : html ,css ,js only.
+
+beautification;- css
+content;- html
+javascript: programming languanges (static and dynamic webpage)
+dynamic webpage : according to user requirement page will be shown.(amazon,gmail etc)
+js: dont need to install any(ext) soft for running.
+
+
+html rules: 
+content : user define
+tags are predefine
+tags h1-h6 supporting.
+<br> tag fo rbreak the line
+<p> tag for paragraph.
+<span>
+
+
+
+<tagname attr1="val1" attr2='val2'....>
+...
+.....
+...
+</tagname>
+<h3 id= "abc" name="test" class="pqr" id="test">
+fdlkl
+</h3>
+
+

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Create an Account</title>
+</head>
+
+<body>
+
+    <h1>Create an Account</h1>
+
+    <form action="https://www.delidded.com/html-css-practice-test/" method="POST">
+        <input type="hidden" name="secret" value="12345">
+
+        <p>
+            <label>Email:</label>
+            <br>
+            <input type="text" name="email">
+        </p>
+
+        <p>
+            <label>Password:</label>
+            <br>
+            <input type="password" name="password">
+        </p>
+
+        <p>
+            <label>Age:</label>
+            <br>
+            <select name="age">
+            <option value="">Select Age</option>
+            <option value="group1">Under 18</option>
+            <option value="group2">18 to 30</option>
+            <option value="group3">31 to 45</option>
+            <option value="group4">46+</option>
+        </select>
+        </p>
+
+        <p>
+            <label>Tell us a little about yourself:</label>
+            <br>
+            <textarea name="about" rows="5" cols="50"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="accepts_tos" value="yes"> I agree to the
+            <a href="https://www.delidded.com/html-css-practice-test/" target="_blank">terms of service</a>
+        </p>
+
+        <p>
+            <input type="submit" value="Sign up">
+            <input type="submit" value="test">
+        </p>
+    </form>
+
+</body>
+
+</html>

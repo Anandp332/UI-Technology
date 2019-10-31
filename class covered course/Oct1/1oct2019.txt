@@ -1,0 +1,61 @@
+Date Object: 
+
+Date is a predefine class in javascript using which we could able to work on current system date or user define custom date
+
+Creating Date object:
+var date= new Date() //returns current system date
+(or)
+var date = new Date(<custom date>);
+Following are the predefined method can be applied on date object.
+.getMonth() - returns value between 0-11
+.getDate() - returns value betwwen 1-31
+.getDay() - returns value between 0-6
+.getFullYear()
+.getHours()
+.getMilliSeconds()
+etc
+Javascript String methods:
+	Following are the predefine methods been supported in javascript which can be applied on strings.
+	.length - is a property to find number of characters in string include spaces .
+	.substring(start_index , length of character);
+	.slice(start_index,end_index)	
+	.replace("what", "with")
+	.concat(string2, string3,....)
+	.charAt(index)
+	.charCodeAt(index)
+	.split('seperator') - Split the string with provided seperator, and returns an array.
+	ect .
+
+
+write to show the date format as per the user requirement.
+following are format user 
+
+1. dd/mm/yy
+2. dd/mm/yyyy
+3. DAyname- monthname- fullyear
+4. dd-fullmonthname-fullyear
+5> dayname, monthname,fullyear
+6. fullyear-mm-dd
+
+write a program to read a string from user and return total number of vowels been present in it.
+write a program to findout total number of words been present within a string.
+write a program to findout total number of special symbol been present within a string.
+write a program to find total number of character inside a string.
+write a program to find total number of character inside a string without using predefine property.
+
+read: splice method..
+
+'setTimeout' and 'setInterval' Methods:
+function parseInt(p){
+	.....
+	...
+	return result;
+}
+
+the true predefine methods been supported in js using which we could able to execute the set of instructions not just when the controller reaches to it but to execute set of instructions only after the provided delay time .
+syntax:
+		setTimeout(<callbackfuntion> , <delaytime>);
+		setInterval(<callbackfuntion> , <delaytime>);
+'setTimeout' and 'setInterval' are almost like the same use to execute provided callback function after and interval of time where the only diff is settimeout will invoke the callback method only once after the provided delay time where as setInterval Method will keep repeatively in executing provided callback method with a gap of provided delay time .
+Note: 'clearInterval()': 
+		'clearInterval()' is a predefine method using which we could stop a second interval method execution 

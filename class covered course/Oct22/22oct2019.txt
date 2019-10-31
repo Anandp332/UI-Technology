@@ -1,0 +1,64 @@
+function abc(){
+    this.property1 = 10; 
+}
+
+funtion parentclass{
+    var a = 10;
+    this.fname ="SAMPLE";
+}
+funtion childh
+
+
+
+Exception Handling: >
+                        Exception or Error:>
+                                               the set of statement or a single line of statement making the flow of application execution process to stop abruptly is called exception or an Error
+                                               following are the 2 type of exception might get raised in an application:
+                                               1> Compile time exception
+                                               2> Run time exception
+                                               3> user defined exception.
+                                               Compile Time Exception:
+                                                                        the exception or error get raised at the  time of compilation is called compile time errors;
+                                                                        ex - syntactical errors.
+                                                                        note: No other language support handling error which gets raise at compile time, mendetorily the syntactical need to be fixed to go for further execution.
+2> the set  Exception raised while executing an application called runtime exception.
+ex - in javascript array index out of bound. refering an element not existing within the dom structure . 
+
+Exception Handling: 
+                    js support the concept of handling runtime exceptions so that the application flow of executions stiil continue even though the reason exception been raised.
+
+Following are the Keywords been supported in js threw which we can handle runtime exception .
+1> try
+2> catch 
+3> finally 
+4> throws
+1> Try:the set of instrunctions in which there is a chance of getting runtime exception has to be placed within the try block.
+2> Catch: it should be the very immediate  and mendetory block need to placed after the try block.
+When an exception get raised within the try block , the controller automatically jumps to corresponding catch block to handle exception.
+ the set of instrunctions threw which we handle the exception has to be placed only within the catch block.
+
+In js we cannot override catch method .
+Exception is a predefine object gets created and will be to catch method .
+The exception objects holds extra information of the current exception been raised.
+
+Finally(it is optional and recommended): the set of instrunctions which need to be forsure executed irrelevent of whether there is an exception be raised within the try block or not has to be placed under finally block.
+
+Adding Finally to a try block is a optional .
+ syntax:
+    try{
+        ...
+        ....
+        ... // set of instruction  in which there is  a change of getting an exception raised.
+
+    }
+    catch(exception){ // Block only gets executed if there is an exception been raised in try block.
+    ...
+    ...
+    }
+    finally{
+        ...
+        ...
+        //set of instrunctions which gets executed forsure irrelevent of whether there is  an exception been raised or not.
+    }
+
+    Handling Userdefine Exception:

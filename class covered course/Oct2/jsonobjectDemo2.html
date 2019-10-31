@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Limitations of Arrays
+		</title>
+	</head>
+	<body>	
+		<script type="text/javascript">
+			/*var sname = 'Raj';
+			var sage = 12;
+			var gender = 'Male';
+			var loc = 'Hyd';
+			var marks = [34, 55, 66, 77];
+			var total = 0;
+			var avg = 0; */
+			var empname = 'Teena';
+
+			var sDetails = {
+				sname: "Raj", 
+				age: 12,  
+				"location": 'Hyd',
+				marks:  [34, 55, 66, 77],
+				'total':  0,
+				avg: 0
+			};
+
+			for (var i = 0; i < sDetails.marks.length; i++) {
+				sDetails.total += sDetails.marks[i];
+			}
+			 sDetails.avg = sDetails.total / sDetails.marks.length;
+
+			console.log("Studnet details");
+			console.log("Studnet name is " + sDetails.sname);
+			console.log("Age " + sDetails.age);
+			console.log("location " + sDetails.location);
+			console.log("total marks " + sDetails.total)
+			console.log("avg " + sDetails.avg);
+
+		</script>
+	</body>
+</html>

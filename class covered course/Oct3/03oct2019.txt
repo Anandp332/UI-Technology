@@ -1,0 +1,94 @@
+Json Format: 
+	var data = {
+
+	};
+	data.name = prompt("enter user name: ");
+	data.age= prompt(" enter user age: ");
+	consol.log(data);
+	consol.log("user name is"+data.name);
+	consol.log("user name is"+data['name']);//both are same 
+
+
+
+json data structure behave like an array use will use number as in array but in json we use string . (array index: 0 ,1 ,2 ,3, ..) & json("name","age","loc", ...);
+
+
+"for in" looping control structure :
+										a looping control structure been supported in js using which we could able to iterate over a json object .
+for in looping control structure  a temprary var use  to hold the corresponding key while iterating over a json object , the temp var holds one key at a time , replaces with another key in next iteration.
+syntax:
+		for (temp object){
+.........//set of instruction gets executed untill it iterates the all keys in json object.
+........
+		}
+
+		for(--- in  --- ){
+
+		}
+
+		data = {
+		 name: 'raj',
+		 age :  20,
+		 gender: 'male',
+		 loc: 'hyd'
+		};
+		for (temp in data){
+		consol.log("key is" +temp);//it will return key
+		consol.log("value is "+ data[temp]); // return value in object
+		}
+
+
+var data = {
+	b_name:'abc',
+	b_prise:300,
+	b_publisher:["xyz","pqr",...],
+	b_author: "lll",
+	b_rating: 9.8
+}
+consol.log(data['b_name']);
+consol.log(data['b_prise']);
+for(var i=0;i<data['b_publisher'])
+
+
+
+Creating Sign In page:::>>>
+----------------------
+
+fname:
+lname:
+contactno: persnl:[]
+			offcl:[]
+mail id : prsnl:[]
+			offcl:[]
+pic:
+dob:
+catagory:
+addr: persnl:state:
+			country:
+		offcl:state:
+			country:
+gender:
+orgni:
+website:
+social id:fb:
+		twitt:
+		linkedin
+
+
+relationship:
+
+
+var ContactDetails = {
+	fname:'jsjh'
+	lname:'skjhsdk'
+	contactnumber:{
+	pesnl:[13526,3256,6378],
+	offcl:[6347,47483]
+	}
+	mailid:prsnl:['gsdhag','sahdjh',''],
+			offcl:['hghqwg','shjh']
+};
+
+
+2marraow topic:
+				Dhtml

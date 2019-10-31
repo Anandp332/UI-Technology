@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Date object
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var daysList = ['Sunday', 'Monday', 'Tuesday', 'Wed', 'Thu'];
+			var monthList = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov'];
+
+			var myDate = new Date();
+			var tmrDate = monthList[myDate.getMonth()] + ' ' + (myDate.getDate() + 1) + ' ' + myDate.getFullYear();
+			console.log(tmrDate);
+			var tDate = new Date(tmrDate);
+			console.log(tDate);
+			// var myDate = new Date("Oct 02 2019");
+			/*console.log(myDate);
+			console.log(myDate.getFullYear())
+			console.log(myDate.getDate())
+			console.log(myDate.getMonth())
+			console.log(myDate.getDay());
+			var day = daysList[myDate.getDay()] ;
+			console.log(day); */
+
+		</script>
+	</body>	
+</html>

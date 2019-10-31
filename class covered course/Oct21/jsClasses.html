@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating JS Classes
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function studentDetails(obj) {
+				this.sname = obj.name;
+				this.age = obj.age;
+				this.gender = obj.gender;
+				this.displayData = function(){
+					console.log("STudent details");
+					console.log("Student name " + this.sname);
+					console.log("age " + this.age);
+					console.log("Gender " + this.gender);
+				}
+			}
+
+			var s1 = {
+				name: 'Raj',
+				age: 30,
+				gender: 'Male'
+			}
+
+			var sData = new studentDetails(s1);
+			console.log(sData);
+			sData.displayData();
+
+			var sData2 = new studentDetails({"name": 'Teena', age: 10, 'gender': 'Female'});
+			console.log(sData2);
+			sData2.displayData();
+		</script>
+	</body>
+</html>

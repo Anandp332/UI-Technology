@@ -1,0 +1,23 @@
+1> <a href> (anter tag)tag: by href tag we can visit any external website or webpage along the internet.
+In anter tag not only text but any thing can be write like <img src > tag...
+
+2> underline content of extension line;
+3> changing color,font-size etc.
+4>target "_blank","_self" etc. <a target,href> or <a href , target> is the same.
+3> img src tag- for load the image link. image can also be added in background.
+
+
+Class Note:: 
+
+different base of applying css property to html elements. following are 4 different ways we could able to inject or add css property to html elements.
+1>Inline css using style attributes. 
+2>Adding css threw classes. 
+3>defining a css class using elements id. 
+4>Defining  a css class using element technic.
+
+HTML DOMS(Document object model) Structure::  Doms structure of a html page define
+ a tree-structure of a current page in which it hold list of all the parent ,child 
+ and siblings element(tag - opening and closing) along with fake content attribute 
+ it is holding.
+
+Q> difference b/w absolute and relative path?

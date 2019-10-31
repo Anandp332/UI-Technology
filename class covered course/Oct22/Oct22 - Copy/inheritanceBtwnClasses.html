@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function parentClass(){
+				var a = 10;
+				this.fname = "SAMPLE";
+			}
+			function childClass() {
+				this.lname = "TEST";
+				this.displayData = function() {
+					console.log("Last name is " + this.lname);
+					console.log("First name is " + this.fname);
+				}
+			}
+			childClass.prototype = new parentClass();
+			var obj = new childClass();
+			obj.displayData();
+
+			var countryNames = {
+				"code_01": {
+					name: "INDIA",
+					code: '01'
+				},
+				"code_11": {
+					name: "China",
+					code: '11'
+				},
+				"code_89": {
+					name: "USA",
+					code: '89'
+				}
+			}
+
+			var statesInfo: {
+				'state_code_01': [
+					{
+						stateName: 'Telanga',
+						code: 's_121'
+					},
+					{
+						stateName: 'Andhra',
+						code: 's_ 127'
+					}
+				],
+				'state_code_89': [
+					{
+						stateName: 'Newyork',
+						code: 's_22'
+					},
+					{
+						stateName: 'California',
+						code: 's_111'
+					}
+				]
+			}
+		</script>
+	</body>
+</html>

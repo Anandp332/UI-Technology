@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating USer defined exceptions
+		</title>
+		<script type="text/javascript" src="userDefinedExceptions.js"></script>
+		<style type="text/css">
+			li	{
+				list-style: none;
+				border: 1px solid;
+				margin: 10px;
+				padding: 10px;
+			}
+			.error {
+				color: red;
+				font-size: 12px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				Enter user name: <input type="text" id="uname">
+			</li>
+			<li>
+				Age: <input type="text" id="uage">
+			</li>
+			<li>
+				<input type="button" value="Save" onclick="saveDetails()">
+			</li>
+			<li class="error" id="ageErr">
+				Error in age validation
+			</li>
+			<li class="error" id="nameErr">
+				Name is mandtyry 
+			</li>
+		</ul>
+		
+	</body>
+</html>

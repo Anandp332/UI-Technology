@@ -1,0 +1,33 @@
+Creating External Style-sheet:--> its is always recommended to create an external file with all the css classes(file with extension.css) .
+link is predefine tag threw which we could include a single css file within a webpage(html page).
+In a single webpage we can include any number of external css files using multiple link tags.
+Syntax: 
+<link rel="stylesheet" type="text/css" href="path of external file">
+
+css positions: - any time if we want to move any dom element to any required position within the page, can be done using margin or padding properties.
+if a dom element moves to the required position using margin or padding properties, it is actually not moving but the element is increasing it own dimensions.
+In order to make or move any dom element to any requires without increasing the dimesion we we use to following css property:.....
+1> top 2> left 3> bottom 
+
+not all the dom element can consider the above css properties but only the dom element which are being position can consider the above properties .
+Is a predefined property threw which we could able to change position of any dom element following are the posible values a position value in position property takes.
+1> static
+2> Relative
+3> Fixed
+4> Absolute .
+
+Element With position static
+								Every dom element by defaults holds the position properties with values static.
+Any dom element with postion statics hold following properties:
+1>  static postioned element cannot be move from the default position 
+2> static postioned element will not consider top, left, right and bottom proprties to static element , it just skips to consider them.
+Syntax:
+		position: static;
+
+Element with position relative : its holds the following prop
+1> its capable to moving to any required position within the page.
+2> its capable of considering the properties left, right , top and bottom.
+3> when its moves to a new position it never looses the default space bean of abeing  by the element the page load.
+4> While moving to a new pisition it always movesrelative to its actual default position.
+Syntax:
+	position:relative:

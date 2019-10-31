@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating CSS Priority
+		</title>
+		<style type="text/css">
+			.userContent {
+				background: green;
+				font-size: 25px;
+			}
+			#uContent {
+				color: blue;
+				font-size: 30px !important;
+			}
+			div {
+				font-weight: bold;
+				text-align: center;
+				font-size: 45px;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="font-size:20px" class="userContent" id="uContent">USER CONTENT</div>
+	</body>
+</html>

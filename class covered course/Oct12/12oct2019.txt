@@ -1,0 +1,19 @@
+Note:   innnerHTML treats as html file but innerText treats as text.
+
+
+event object: every define object is generated any time and event happens on a page , object holds extra informations of the current event been generated.
+n number of event object gets created when n number of events happens on a page.
+it is not mendatory to catch and event object when it gets generated, we can catch when it is need.
+
+Following are the extra information availble under event object .
+
+typeofevent  -  specifies the type of event got generated.
+target - Reference of the dom element on which event got generated.
+clientX,clientY  - specifies the x and y points at which event got generated.
+ctrlKey , altKey - specifies whether alt or ctrl key been present or not .
+path - specifies the complete upstream path till html tag.
+timestamp: specifies the time at which event got generated .
+charCode - specifies ASCII value of character been pressed only incase of key press event .
+
+
+etc.

@@ -1,0 +1,34 @@
+id: id is an unique it can be use once in any tag and we can use class also.
+heading: using h only not .h if .h then its react like class.
+paragraph: its also use as p not .p.
+body: we can use body as class because its come once in any html code
+
+css slope property:css priority is a dom element being injected with
+ the same css property(different vales)
+using all the 4 different ways of applying css
+ (inline, id , tagpge, class name) browser follow below
+priority order while applying css to element.
+1>css being applied threw inline always takes heigher priority in order.
+2> css being applied threw a id takes second priority.
+3> css being applied using class takes third priority in order.
+4> css being applied using tagname takes least priority in order.
+
+debugger tool: A tool which is bydefault available in every browser using which we could able to debugger
+local or public web pages whithin the browser.
+ following other commercial features being supported by any debugger tools.
+ 1> using debugger tool we could able to implement any curd(create a page ) operation on any dom element 
+ within the page.
+ 2> using debugger tool we could able to add dynamic changes to the html element or 
+ corresponding css dynamically file running the page.
+ 3> even provides a feature of debugging js code by adding break points, watching variale values, monitoring
+ flow of execution
+ 4> if even provides features of monitoring any server call or interaction including the total time and
+ size being taken by a individual server call.
+ 5> using debugger tools we can monitor the performance of a page , add the required changes to incease
+ the preformance of it.
+ 6> if even helps us to monitor to memory allocation of the current web page .
+ Note: debugger tool can be opened for a current webpage by clicking on F12 button.
+
+ debug: see the flow of execution and finding out the bug.
+ while debugging changes is temperary changes . 
+ 

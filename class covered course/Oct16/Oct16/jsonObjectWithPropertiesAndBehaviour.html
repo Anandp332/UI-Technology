@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating json Oject with properties and behaviour
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			function addvalues(){
+
+			}
+
+			var addvalues = function(){
+
+			}
+
+			var empname = "Krish";
+			var department = "IT";
+			var sDetails = {
+				name: 'Raj',
+				age: 30,
+				marks: [34, 89, 90, 33],
+				total: 0,
+				getTotalAndAvg: function(){
+					for (var i  = 0; i < sDetails.marks.length; i++) {
+						sDetails.total += sDetails.marks[i];
+					}
+					sDetails.avg = sDetails.total / sDetails.marks.length;
+				},
+				getGrade: function(){
+					if(sDetails.avg >= 40) {
+						sDetails.grade = 'Passed';
+					} else {
+						sDetails.grade = 'Failed';
+					}
+				},
+				displayData: function() {
+					sDetails.getTotalAndAvg();
+					sDetails.getGrade();
+					console.log("N ame is " + sDetails.name);
+					console.log("Age is " + sDetails.age);
+					console.log("Total " +  sDetails.total);
+					console.log("Avg is " + sDetails.avg);
+				}
+			};
+
+			
+			sDetails.displayData();
+		</script>
+	</body>
+</html>

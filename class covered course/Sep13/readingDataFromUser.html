@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Form tag and input elements.
+		</title>
+		<style type="text/css">
+			ul {
+				width: 700px;
+				height: 700px;
+				border: 2px solid #ccc;
+				margin: 20px auto;
+				margin: 0;
+				padding: 0;
+			}
+			h3 {
+				text-align: center;
+			}
+			li {
+				list-style: none;
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3 >User Registration Page</h3>
+		<form  action="http://sampleserver.com/data" method="POST ">
+			<ul>
+				<li>
+					<lable for="uname">Enter user name: </lable>
+					<input type="text" name="uname" required="">
+				</li>
+				<li>
+					Enter Account Password:
+					<input type="Password" name="userpwd">
+					<input type="checkbox">Show password
+				</li>
+				<li>
+					Gender: 
+					<input type="radio" name="usergender"> M
+					<input type="radio" name="usergender"> F
+				</li>
+				<li>
+					Known Languages
+					<input type="checkbox" name="lng_eng"> English
+					<input type="checkbox"  name="lng_tel"> Telugu
+					<input type="checkbox"  name="lng_hin"> Hindi
+				</li>
+				<li>
+					Country: 
+					<select name="country">
+						<option value="ind">India</option>
+						<option>PAK</option>
+						<option>Japan</option>
+						
+					</select>
+				</li>
+				<li>
+					About yourself: 
+					<textarea maxlength="" rows=""  name="about"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Register"> 
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>

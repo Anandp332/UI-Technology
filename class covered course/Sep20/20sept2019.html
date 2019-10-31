@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demonstrating for loop</title>
+</head>
+<body><div>for loop</div>
+<script type="text/javascript">
+	var counter;
+	for ( counter=1 ; counter<= 5  ; counter++  ){
+		console.log("Good Mornig");
+	}
+//-----------------------------------------------------------
+
+	for (var i=2;i<=100;i=i+2){
+		console.log(i);
+	}
+//----------------------------------------------
+	for (var s=98; s>=48;s--){
+		console.log(s);	
+	}
+//-------------------------------------
+	for( var s=1; s<=100;s++){
+		if (s%2==0){
+		console.log(s);		
+		}
+	}
+//----------------------------------------------
+	for (var s=98; s>=35; s--){
+		if (s%2!=0){
+			console.log(s);
+		}
+//--------------------------------------------------------
+	var sum=0;
+	for(var i=99;i<=1000;i++){
+		sum+=i;
+	}
+	console.log(sum);
+//----------------------------------------------------
+
+	var n=5;
+	for( var i=1;i<=20;i++){
+		var result=n*i;
+		console.log(n+"*"+i+"="+result)
+	}
+
+//	-----------------------------
+	var n=4;
+	var p=0;
+	for( var i=2;i<n;i++){
+		if(n%i==0){
+			console.log("not prime");
+			p=1;
+			break;
+		}
+	}
+	if (p==0) {
+		console.log("prime");
+	}
+	----------------------------------------
+
+</script>
+</body>
+</html>

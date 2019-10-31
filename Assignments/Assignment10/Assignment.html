@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Demonstrating Inhrtnce btwn static and Dynamic Object
+    </title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body style="background: linear-gradient(red 10%, white,pink,green) ; transform: scale(0.89); ">
+    <div class="container" style="background:repeating-linear-gradient(90deg, red ,white,yellow ); transform: rotate(360deg); color: whitesmoke;">
+        <ul>
+            <li class="title" style="background:linear-gradient(180deg,yellow,red,white);">
+                SPPU PUNE - Student Registration Block
+            </li>
+            <li style="background:repeating-linear-gradient(90deg, green,yellow,pink);">
+                Enter Student Name: <input type="text" class="form-control" id="uname" onkeypress="validateData(event) ">
+                <div class="errblock">
+                    Name is mandatory
+                </div>
+            </li>
+            <li style="background:repeating-linear-gradient(90deg, green,yellow,pink);">
+                Age: <input type="text" class="form-control" id="uAge">
+            </li>
+            <li style="background: repeating-linear-gradient(90deg, green,yellow,pink);">
+                Country:
+                <select id="ucountry" class="browser-default custom-select custom-select-lg mb-3">
+                    <option>India</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                    <option>USA</option>
+                </select>
+            </li>
+            <li style="background: repeating-linear-gradient(90deg, green,yellow,pink);">
+                Class to get Admission:
+                <select class="browser-default custom-select custom-select-lg mb-3 uclass">
+                    <option>Btech</option>
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <option>Degree</option>
+                </select>
+            </li>
+            <li style="background: repeating-linear-gradient(90deg, green,yellow,pink);">
+                <input class="btn-success" type="button" value="ADD Student" onclick="saveDetails() ">
+            </li>
+        </ul>
+    </div>
+    <div class="detailsContainer container" style="background: linear-gradient(red 10%,blue,yellow,green);color: whitesmoke;">
+        <input class="btn btn-info" type="button" value="EDIT DETAIL" onclick="editData()">
+        <input class="btn-danger" type="button" value="DELETE DETAIL" onclick="deleteDetails()">
+    </div>
+    <script type="text/javascript">
+        function validateData(event) {
+            console.log(event);
+        }
+    </script>
+
+</body>
+
+</html>

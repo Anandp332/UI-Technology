@@ -1,0 +1,10 @@
+1> window.open() method
+2> form validation 
+3> addeventListener has 3 parameter ex addeventListener("click","funtion(){},bool value(true or false));
+4> event object
+Advanced JS:
+            json object with properties and behavior:
+
+
+Tomorrow topic :
+5>  jquery

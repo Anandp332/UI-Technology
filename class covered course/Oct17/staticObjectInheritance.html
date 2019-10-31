@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Inheritance between two static objects.
+		</title>
+	</head>
+	<body>
+		<div id="container"></div>
+		<script type="text/javascript">
+
+			var data = {
+				name:"test"
+			};
+			console.log(data);
+
+
+			var sellerData = {
+				sellerName: 'Indian Electronics Pvt ltd.',
+				sellerLocation: 'New Delhi',
+				sellerRating: '4/5',
+				displaySellerInfo: function() {
+					console.log("Seller name " +  this.sellerName);
+					console.log("Seller sellerLocation " +  this.sellerLocation);
+					console.log("Seller rating " +  this.sellerRating);
+				}
+			};
+
+			var product1Details = {
+				name: 'Laptop',
+				price: '$300',
+				manufacturer: 'Samsung',
+				rating: '3.5/10',
+				
+				displayProductDetails: function() {
+					console.log("PRODUCT DETAILS 1");
+					console.log("Product name"  + this.name);
+					console.log("Product manufacturer"  + this.manufacturer);
+					console.log("Product Price"  + this.price);
+					console.log("Product Rating"  + this.rating);
+					this.displaySellerInfo();
+				}
+			}
+			product1Details.__proto__ = sellerData;
+			var product2Details = {
+				name: 'Mobile',
+				price: '$200',
+				manufacturer: 'HTC',
+				rating: '5.5/10',
+				
+				displayProductDetails: function() {
+					console.log("PRODUCT DETAILS 2");
+					console.log("Product name"  + this.name);
+					console.log("Product manufacturer"  + this.manufacturer);
+					console.log("Product Price"  + this.price);
+					console.log("Product Rating"  + this.rating); 
+					this.displaySellerInfo();
+				}
+			}
+			product2Details.__proto__ = sellerData;
+			product1Details.displayProductDetails();
+
+			product2Details.displayProductDetails();
+		</script>
+	</body>
+</html>

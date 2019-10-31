@@ -1,0 +1,73 @@
+.header {
+            text-align: center;
+            border: 5px solid;
+            border-color: green;
+            height: 40px;
+            background-image: url("download.jpeg");
+            background-color: red;
+            margin: 10px 0px 10px 0px;
+            width: auto;
+            color: orange;
+        }
+			table,  td,  th, tr {
+				border: 1px solid;
+				color:red;
+			}
+			body{
+				background: url("dowload1.jpg");
+			}
+			td{
+				background: url("download.jpeg");
+			}
+			table{
+				background-color: yellow;
+				float:left;
+			}
+			th{
+				background-color:black;
+				color:green;
+			}
+.bd{
+	height: 386.92px;
+	width: 477.69px;
+	color:#FF0000;
+	border: 1px solid;
+	font: 16px;
+	margin: 1px;
+	background: #FFFF00;
+	float:right;
+}
+.sn, .stdn, .ag, .pl, .tlh{
+	border: 1px solid;
+	height: 29.69px;
+	float: left;
+	margin: 1.5px;
+	font-size: 16.8px;
+	text-align: center;
+	background: url("download.jpeg");
+	}
+	.tl{
+		border: 1px solid;
+		height:  341.39px;
+		width: 115.39;
+		text-align: center;
+		margin: 1px;
+		background: url("download.jpeg");
+		float: left;
+		font: italic;
+	}
+	.sn{
+		width: 38.46px;
+	}
+	.stdn{
+		width: 118.46px;
+	}
+	.ag{
+		width: 39.23px;
+	}
+	.pl{
+		width:136.92px;
+	}
+	.tlh{
+		width: 115.39px;
+	}

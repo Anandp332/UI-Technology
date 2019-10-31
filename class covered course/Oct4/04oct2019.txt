@@ -1,0 +1,70 @@
+Dhtml:-> (dynamic html):-- js is a powerful language comes with predefine objects and methods using which we could able to preform any curd(create update and delete) operations on any dom element or its corresponding css properties dynamically.
+>Using js we could able to generate the complete html page with dynamic data as an when required .
+>Improvides predefine method and object using which we can handle event speed generated on the page .
+>Improvides predefine method and object using which we could able to read or write from or on the html input element .
+Note:Document and window are the 2 predefine object bydefault available which actually holds the complete dom structure , we can perform any operation on any dom element using these objects.
+Event Handling : Any action been perform on a page is called an event .
+Following are types of events might get generated on a page.
+
+>click 
+>double click
+>keypress
+>keyup
+>mousedown
+>mouseup
+>focus 
+>blur
+etc.
+
+Event Handling : The process of performing a perticuler job when a perticular of event happen on a page is called event handling .
+js provides 2 ways of implementing event handling on a page .
+1> Static E H
+2> Dynamic E H
+1> js provides set of predefine event attributes using which we can statically specified to dom element itself to involked what method for what type of event .
+Following are set of predefine html attributes threw which we can implement static event handling on html handling .
+onclick 
+onchange
+onblur
+onfocus
+onkeyup
+onkeypress
+ondbclick
+onmouseup
+onmousedown
+etc
+syntax:
+	<div <event attribues>="<method need to involked>">
+	----
+	</div>
+	eg:
+	funtion displayData(){
+	.....
+	}
+	<div onclick= 'displayData()'>
+	...
+	</div>
+
+
+	Window & Document object: the 2 predefine object been supported in js using/thew which we could perform any type of operation on any html element or its corresponding css property.
+	the following are the diffrnt way we could refer a dom element on page:
+		document.getElementById()- Using which we could refer any dom element on a page using its unique id.
+
+		document.getElementByClassName() - using which we could refer any dom element using the class name.
+
+		document.querySelector( ) - A method been supported from html 5 using which we can refer dom element by id/classname/tagname.
+
+		Creating a dom element through js:
+		document.createElement(<tagname>) - Method to create any dom element dynamically using js.
+
+		Following are the method can be applied on element reference :
+		element.setAttribute("attribute name", 'value') - using which we could able to set any attribute dynamically to a dom element.
+
+		element.get`1Attribue("attribute name") - using which we can get the corresponding attribute value of any dom element.
+
+		element.style - Using which dynamically any css property of any dom element  can be retrieved or updated.
+
+		element.appendChild(<element>) - Using which we could able to append an element to an existing dom element on page.
+
+		Implementing Dynamic event Handling :
+
+		element.addEventListerner('eventname')
