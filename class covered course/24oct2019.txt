@@ -1,4 +1,0 @@
-Note: 
-Closure concept in js
-
-

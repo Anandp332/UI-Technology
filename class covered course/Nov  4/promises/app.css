@@ -1,0 +1,35 @@
+.container  {
+	border: 2px solid;
+	margin: 10px;
+	padding: 10px;
+}
+
+.matchBlock  {
+	border: 2px solid;
+	background: #ccc;
+	margin: 10px;
+	padding: 10px;
+}
+
+.subTitle { 
+	text-align: center;
+	color: blue; 
+}
+.title {
+	color: green;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+.loadingContainer {
+	position: absolute;
+	left: 40%;
+	top: 30%;
+	display: none;
+}
