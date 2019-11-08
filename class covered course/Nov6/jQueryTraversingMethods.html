@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Jquery   Traversing Methods.
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+
+	</head>
+	<body>
+		<input type="button" value="Apply" onclick="applyChanges()">
+		<ul>
+			<li>
+				<div>Item 1</div>
+			</li>
+			<li>
+				<div id="specialChild">
+					<div>Item 1</div>
+				</div>
+			</li>
+			<li>
+				<div>Item 1</div>
+			</li>
+			<li>
+				<div>Item 1</div>
+			</li>
+		</ul>
+		<script type="text/javascript">
+			function applyChanges() {
+				// $("ul").children().css("border", "1px solid");
+				// $("ul").find("*").css("border", "1px solid");
+				$("ul").find("div").css("border", "1px solid");
+			}
+		</script>
+	</body>
+</html>

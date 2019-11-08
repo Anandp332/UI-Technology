@@ -1,0 +1,20 @@
+one page application
+templates
+Node js
+express js
+
+
+
+Date 05 Nov 2019
+
+
+
+
+$("#abc") - return the references of an element having id as abc.
+$('.abc') = returns the references of an element having class as abc.
+$('div') = returns the all elements having tagname as div.
+$('div#abc') = div with id abc.
+$('input [type = text]') returns the references of all input type text element.
+$('td:odd') - returns reference of all td element in odd position.
+$('div:eq(2)')  returns the reference of div tag which are in 2d.
+$('span :first-child") : returns the all span  element which ever 

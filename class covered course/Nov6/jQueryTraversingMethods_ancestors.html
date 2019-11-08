@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Traversing Ancestors
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<style type="text/css">
+			.block {
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Apply" onclick="applyChanges()">
+		<div >
+			<div>
+				<span>Hello</span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function applyChanges() {
+				// $("span").parents().addClass("block");
+				$("span").parentsUntil('div').addClass("block");
+			}
+		</script>
+	</body>
+
+</html>

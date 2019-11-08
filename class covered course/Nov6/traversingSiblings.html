@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Traversing Ancestors
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<style type="text/css">
+			.block {
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Apply" onclick="applyChanges()">
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li id="specialItem">Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+			<li class="abc"> Item 7</li>
+			<li>Item 8</li>
+
+		</ul>
+		<script type="text/javascript">
+			function applyChanges() {
+				// $("#specialItem").siblings().addClass('block');
+				// $("#specialItem").nextAll().addClass('block');
+				$("#specialItem").nextUntil('.abc').addClass('block');
+			}
+		</script>
+		
+	</body>
+
+</html>
