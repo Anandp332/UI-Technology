@@ -1,0 +1,78 @@
+Json Representation:->
+    BookDetals{
+    "bookname" : "about yourself",
+    "author" : "Mr. Raj Kishore ",
+    "publisher" : "abc",
+    "price" : "Rs 2000",
+    "id" : "Code_1234",
+    "bar_code" : 3534367898
+}
+
+XML Representation:->
+
+    <? XML version = "1.0"?>
+    <BookDetals>
+    <book id = "Code_1234">
+    <bookname>about yourself</bookname>
+    <author> Mr Raj Kishore</author>
+    <publisher> abc</publisher>
+    <price>Rs 2000</price>
+    <bar_code> 3534367898</bar_code>
+    </book>
+    <book id = "..">
+    .....
+    .....
+    .....
+    </book>
+    </BookDetals>
+
+
+
+    | Angular, React - Client site framework .
+    | javascript - Client site technology
+    | Nodejs - Server site 
+    | ( chrome Using V8 Engine ) - That why chrome is faster than other web browser. 
+    |  Nodejs - is cross platform (independent platform)
+
+Non-Blocking Machanism:->
+
+    |Client1|
+    |Client2|           _____________
+    |Client3|<-------  |Nodejs      |
+    |Client4|           -------------
+    |Client5|
+
+Clusters:->
+            Taking image at client site in Server site.
+
+
+            Nodejs a populor Server was written initially by Mr. Ryan Dal in 2009.
+            It has the height and advantages to create a Server which uses javascript as programming language .
+
+            Nodejs is a very first Server uses javascript as programming language at Server end.
+            its an opensource , crossplatform javascript runtime in the invironment developed on chrome V8 js Engine which is directly
+            into the native machine code.
+
+            Its a lightweight framework used to developed Server site web application .
+            It uses event driven non blocking input/output model which makes it the right choice for data intensive realtime application.
+
+Features:-->
+
+
+        Follwing are the height and Features been supported in Nodejs which are making it so populor and powerful.
+            1>Opensource:-> Its an Opensource platform which means the copyright holder has given various rights of studying & distributing 
+                            the software  to any place for any purpose (Commercial & Non-Commercial).
+                
+            2>Highly Scalable:-> As Nodejs uses events Machanism.
+                                It is highly Scalable & helps the Server in non-blocking response.
+                    
+            3>Simple & Fast :-> As Nodejs is builds on google chrome V8 Engine ,
+                                it is libraries are highly advanced enhance instructions gets executed in a faster speed.
+            
+            4> Non-Buffering:-> The special Features of Nodejs makes Nodejs to not buffer any data.
+
+            5>Single threded:-> As it uses process of events looping, it is able follow single threded module.
+
+            6> Cross Platform:-> Nodejs can be easily created and deployed into chrome platform like windows , mac , linux etc.
+
+            Tommorrow class : Architecture of Nodejs
