@@ -1,0 +1,69 @@
+Following are different may we could traverse between dom element .
+
+traverse children:
+    element.children() - Returns the immidiate children of element.
+    element.find("<pattern>") - Returns all children which are matching the provided pattern .
+
+
+traversing Ancestors:
+    element.parent() - Returns refference of immidiate parent.
+    element.parents() - Returns refference of parent and Ancestors untill html tag.
+    element.parentUtil("<pattern>") - Returns refference of all parent untill it finds a parent with provided patterns.
+   
+traversing siblings:
+    element.next() - Returns refference of immidiate next siblings.
+    element.prev() - Returns refference of immidiate prev siblings.
+    element.nextAll() - Returns refference of all next siblings.
+    element.prevAll() - Returns refference of all prev siblings.
+    element.nextUntill("<pattern>") - Returns refference of immidiate all next siblings element untill it find an element with provided pattern.
+    element.prevUntill("<pattern>") - Returns refference of immidiate all prev siblings element untill it find an element with provided pattern.
+
+Implementing event handling through jquerry methods.
+
+following are predefine methods through which  we can  Implement event handling on dom element .:
+    element.click(<callback methods>);
+    element.hover(<callback methods>);
+    element.change(<callback methods>);
+    element.focus(<callback methods>);
+    element.mousehover(<callback methods>);
+    element.keyup(<callback methods>);
+    element.keydown(<callback methods>);
+    etc.
+
+event handling through or methods : - 
+    element.on("<type of event >", <callback methods>);
+
+    eg. element.on("click", funtion(event){.....});
+    element.on("mousehover", funtion(event){ ...});
+
+
+Jquerry Selectors:--->
+    following are differentmay we could an exictly dom element on page.
+        $("#abc") - Returns the refference of an element handling as abc.
+        $(".abc") - Returns the refference of an element handling class as abc.
+        $("div") - Returns the refference of an element handling tag div.
+
+
+predefine methods supported in jquerry which can be applied on any dom elements::--->
+    element.addclass("<one or more class >") - use to add one or more classes to dom elements .
+    element.rmvclass("<classname>") - used to remove a specified class from an element.
+    element.hasclass("<classname>" ) - returns true/false if the class existing to the specified element.
+    element.css("key","value") - to add css property to element.
+    element.css({"key1","value1":"key2","value2": ...}) - to add more than one css property to an element.
+    element.hide() - used to hide and visible element.
+    element.show() - to show hidden element.
+    element.contains("hello") - return every dom element having text contain as hello.
+    element.append(<element>) - apppend provided element as a children .
+    element.attr("attribute name" , "value") - used to set attribute value to an element.
+    element.empty() - returns all child element of an element.
+    element.text() - set or get the text contain of an element.
+    element.html() - set or get html content of an element.
+    element.val() - get/set value of an input element.
+    element.remove() - delete the element from dom structure .
+    element.prepend(<element>) - prepend provided element.
+    element.appendTo(<parent element>) - append to the current element to a specific parent element .
+    element.toggle()  - used  to toggle display property(none/block) of dom element .
+    element.toggleClass() - adding & removing property of dom element.
+
+      Tommarow topic: Jquerry ...
+ 
