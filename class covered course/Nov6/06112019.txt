@@ -1,0 +1,37 @@
+Jquerry:- 
+
+@find the methods to take all children when we use * and we can also specify by tag , class & other way also.
+    $("span").parent().addClass("block(it is a class)");
+    $("span(start with)").parentClass("div(it is end)").addClass("block(it is a class)");
+    $("#specialItem(its a class)").sibling().addClass("block"); - all sibling (tags) which has sibling special class id tag.
+
+Adding animation to an dom element using Jquerry predefine methods.
+    element.hide(<delay>, optional callback);
+    element.show(<delay>, optional callback);
+    element.toggle(<delay>, optional callback);
+
+    eg:
+    $("#abc").hide(2000,funtion(){...});
+
+
+Animation Using slide: ->
+    element.SlideUp(<delay>, optional callback);
+    element.SlideDown(<delay>, optional callback);
+    element.SlideToggle(<delay>, optional callback);
+
+Animation Using Fade Effect::-->
+    element.fadeIn(<delay>, optional callback);
+    element.fadeOut(<delay>, optional callback);
+    etc.
+
+Jquerry Master Animation methods::--->
+    Using "animation" method we could provide custom css properties which all <missing word> to codded with animation effect .
+    element.animation({
+        //set of css property with value
+    },<delay value>);
+
+Difference between Json and Xml : - >
+    XML(extensable markup language) used to hold data as like a json object may the only Difference is data get stored under a key 
+    whare as in XML  data is bring hold under user define self discriptive tags.
+    
+    
