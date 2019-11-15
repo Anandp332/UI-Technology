@@ -75,4 +75,4 @@ Features:-->
 
             6> Cross Platform:-> Nodejs can be easily created and deployed into chrome platform like windows , mac , linux etc.
 
-            Tommorrow class : Architecture of Nodejs
+            Tommorrow class : Architecture of Nodejs.
