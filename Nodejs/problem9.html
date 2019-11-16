@@ -1,0 +1,17 @@
+<!--
+    Named funtion return ananymous ananymous return inner funtion  & inner return "hello--!".
+-->
+<!DOCTYPE html>
+<html>
+<script>
+    function fun_one() {
+        return function() {
+            return function() {
+                return "hellow--!";
+            };
+        };
+    };
+    document.write(fun_one()()());
+</script>
+
+</html>
