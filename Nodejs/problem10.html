@@ -1,0 +1,28 @@
+<!--
+    Create calculator:-
+        -addition
+        -substraction
+        -multiplication
+        -division
+-->
+<!DOCTYPE html>
+<html>
+<script>
+    var calculator = function() {
+        return function(arg1, arg2) {
+            document.write("add" + (arg1 + arg2 + "<br>"));
+            return function(arg1, arg2) {
+                document.write("sub" + (arg1 - arg2) + "<br>");
+                return function(arg1, arg2) {
+                    document.write("mul" + (arg1 * arg2) + "<br>");
+                    return function(arg1, arg2) {
+                        document.write("div" + (arg1 / arg2) + "<br>");
+                    };
+                };
+            };
+        };
+    };
+    document.write("calculator" + calculator()(20, 10)(20, 10)(10, 10)(10, 2));
+</script>
+
+</html>
