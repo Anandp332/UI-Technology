@@ -1,0 +1,58 @@
+MongoDB
+
+It is an opensource Database management system (DBMS) which uses a document oriented database model which supports various forms of data.
+
+In Mongodb, instead of using tables and rows to store data, it uses  collections and documents.
+
+It is also called as NO-SQL language, as we dont write queries to retrive data, instead we write simple commands to manipulate data.
+
+Following are the high end features of MongoDB:
+
+1. Each database in mongo contains set of collections which inturn contains documents. Each document can be different with a varying number of fields.  The size and content of each document in a collection can be different from each other.
+
+2. The document structure is more inline with how developers construct their classes and objects in their respective programming languages.
+
+3. The rows or documents in mongodb doesn't need to have a predefined schema , instead the fields can be created on the fly.
+
+4. The data model available within MongoDb allows you to represent hierarchical relationships, to store arrays, and other more complex structures more easly.
+
+Key Components of mongodb Architecture:
+
+1. '_id' - This is a required filed in every mongodb document. The _id field represents a unique value in teh MongoDB  document. It is like a primary key. If we create a new document, without _id, Mongo will automatically adds a filed _id with a unique random value.
+
+2. C ollection: This is a grouping of mongodb documents. A collection is the equivalante of a table which is created in other RDBMS
+
+3. Cursor: This is a pointer to the result set of a query, Clients can iterate through a cursor to retrive  results.
+
+4. Database: -  This is a container for  collections. In a single mongo db server, it can hold any number of Databases.
+
+5. Document: Is a  record in a mongodb collection is basically called a document, Document inturn consists of field names and values.
+
+6. Field - A name-value pair in a document. A document can have zero or more numkber of fields.
+
+List of commands can be run on Mongo shell:
+
+1. help - Shows the help options
+2. show dbs - Shows the list of current databases in mongo server
+3. use <databasename> - Uses the specified database as current.
+
+4. show collections - Lists out all collections available in current database
+
+5. db.<collection name>.find() - Returns all documents in specified collection.
+
+6. db.<collection name>.find({gender: "female"}) - Returns all documents from collection having gender as female
+
+7. db.<collection name>.insertOne() - Inserts a new document to collection.
+
+8. db.collectionname.insertMany() - To insert many records at a time.
+9. db.collectionname.updateOne() - To updated a single record at a time.
+10. db.collectionname.updateM any() - To updated more than one  record at a time.
+11. db.collectionname.deleteOne() - To delete single documen t
+12. db.collectionname.deleteMany() - To delete more than one documents.
+13. db.collection.drop() - Drops the collection from database
+14. db.collection.count() - Returns total number of documents.
+15. db .collection.find().limit(n) - returns only n results
+16. db .collection.find().sort(<criteria>) - Returns sorted document based on provided criteria.
+
+etc.
+
