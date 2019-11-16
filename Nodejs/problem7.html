@@ -1,0 +1,27 @@
+<!--
+    Pass three arguments to one funtion definition to another funtion .
+    -return argument values :-
+        1> Angularjs 
+        2> Nodejs
+        3> MongoDB 
+-->
+
+<!DOCTYPE html>
+<html>
+<script>
+    var fun_one = function(arg1, arg2, arg3) {
+        return arg1() + "<br>" + arg2() + "<br>" + arg3();
+    };
+    document.write(function() {
+            return "Angularjs", "Nodejs", "MongoDB";
+        },
+        function() {
+            return "Nodejs";
+        },
+        function() {
+            return "MongoDB";
+        }
+    );
+</script>
+
+</html>
