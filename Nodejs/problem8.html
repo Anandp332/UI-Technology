@@ -1,0 +1,18 @@
+<!--
+    Pass element in empty array.
+-->
+<!DOCTYPE html>
+<html>
+<script>
+    var my_arr = [];
+    for (var i = 0; i < 5; i++) {
+        my_arr.push(function() {
+            return i;
+        });
+    };
+    for (var i = 0; i < my_arr.length; i++) {
+        document.write(my_arr[i]());
+    }
+</script>
+
+</html>
