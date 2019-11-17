@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script>
+    function class_one(){
+        this.myfun = function(){
+            return new class_two;
+        }
+    }
+    function class_two(){
+        this.myfun = function(){
+            return "hello--!"
+        }
+    }
+    document.write(new class_one().myfun().myfun());
+</script>
+</html>

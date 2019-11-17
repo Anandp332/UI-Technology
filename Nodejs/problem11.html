@@ -8,18 +8,19 @@
 
 <script>
     function class_one() {
-        this.sub_one = "Angular";
-        this.sub_two = "Nodejs";
-        this.sub_three = "MongoDb";
-    };
-    this.getDetails = function() {
-        return this.sub_one();
-        return this.sub_two();
-        return this.sub_three();
+       this.sub_one = "Angular";
+       this.sub_two = "Nodejs";
+       this.sub_three = "MongoDb";
 
-    };
+    this.getDetails = function() {
+       return this.sub_one;
+       return this.sub_two;
+       return this.sub_three;
+
+   }
+    }
     var obj = new class_one();
-    document.write(obj.getDetails);
+    document.write(obj.getDetails());
 </script>
 
 </html>
