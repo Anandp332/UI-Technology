@@ -1,0 +1,21 @@
+<!--
+    Class with constructor 
+-->
+
+<!DOCTYPE html>
+<html>
+<script>
+    function class_one(arg1, arg2, arg3) {
+        this.var_one = arg1;
+        this.var_two = arg2;
+        this.var_three = arg3;
+
+    };
+    var obj = new class_one("Angular" + "<br>" + "Nodejs" + "<br>" + "MongoDB");
+    document.write(obj.var_one + "<br>" + obj.var_two + "<br>" + obj.var_three + "<br>");
+    document.write(obj.var_one + "<br>");
+    document.write(obj.var_two + "<br>");
+    document.write(obj.var_three + "<br>");
+</script>
+
+</html>
