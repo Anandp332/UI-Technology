@@ -1,0 +1,70 @@
+.header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline;
+	border: 1px solid;
+	padding: 5px;
+}
+.detailsContainer {
+	border: 1px solid;
+	height: 550px;
+	margin: 10px 0;
+}
+.footer {
+	border: 1px solid;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+
+}
+.leftBlock, .rightBlock {
+	border: 1px solid;
+	padding: 5px;
+	margin: 5px;
+	float: left;
+	height: 525px;
+}
+
+
+.leftBlock {
+	width:  25%;
+}
+.rightBlock {
+	width: 70%;
+	overflow: auto;
+}
+li {
+	border: 1px solid;
+	margin: 5px;
+	padding: 5px;
+}
+li:hover {
+	background: #ccc;
+	cursor: pointer;
+}
+
+.rightBlock li	{
+	list-style: none;
+
+}
+.item {
+	height: 160px;
+}
+.imgBlock {
+	border: 1px solid;
+	width: 120px;
+	height: 120px;
+}
+.detailsBlock, .imgBlock {
+	float: left;
+}
+.detailsBlock div {
+	float: left;
+}
+.detailsBlock li {
+	height: 20px;
+}
+.lable {
+	width: 100px;
+}

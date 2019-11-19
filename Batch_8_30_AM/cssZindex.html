@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating CSS Z-index property
+		</title>
+		<style type="text/css">
+			.block {
+				border: 2px solid;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+			}
+			.block1 {
+				background: green;
+			}
+			.block2 {
+				background: blue;
+				position: relative;
+				left: 120px;
+				top: 30px;
+				z-index: 100;
+			}
+			.block3 {
+				background: yellow;
+				position: relative;
+				left: 100px;
+				z-index: 100;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="block block1">BLOCK 1</div>
+		<div class="block block2">BLOCK 2</div>
+		<div class="block block3">BLOCK 3</div>
+	</body>
+</html>

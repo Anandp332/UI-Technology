@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating String Methods
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var msg = "Hello evEry one, how arE you doing";
+			console.log(msg.length);
+			//console.log(msg[34]);
+			var count = 0;
+			for (var i = 0; msg[i] != undefined; i++) {
+				console.log(msg[i])
+				count++;
+			}
+			console.log(count);
+			//console.log(msg.length);
+			var sum = 0;
+			/*       for (var i  = 0; i < msg.length; i++) {
+				console.log(msg[i]);
+				if (msg[i] == 'a' || msg[i] == 'e') {
+					sum++;
+				}
+			}
+			console.log("no of vowels are" + sum )
+			*/
+			console.log(msg.charAt(4));
+			console.log(msg.charCodeAt(4));
+
+			console.log(msg.toLowerCase());
+			console.log(msg.toUpperCase());
+			console.log(msg.substr(4, 10));
+			console.log(msg.slice(4, 10));
+			// msg = msg.replace("every", "MANY");
+			// msg = msg.replace("e", "---");
+			//msg = msg.replace( /e/gi , '***');
+
+			console.log(msg);
+
+			console.log(msg.split(' '));
+
+			var data = [23, 23,234,234,2];
+			console.log(data);
+			console.log(data.join(''))
+
+		</script>
+	</body>
+</html> 

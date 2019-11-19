@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>	
+		<script type="text/javascript">
+			var sname = "Raj";
+			var age = 20;
+			/*var m1 = 90;
+			var m2 = 99;
+			var m4 = 55;
+			var m3 = 88;
+			var m5 = 100; */
+			var marks = [90, 99, 55, 88, 100, 33, 23];
+			/*marks[0] = 90;
+			marks[1] = 99;
+			marks[2] = 55;
+			marks[3] = 88;
+			marks[4] = 100; */
+			var total = 0;
+			var avg = 0;
+			var grade;
+			 // total = marks[0] + marks[1] + marks[2] + marks[3] + marks[4];
+
+			 for (var i = 0; i < marks.length; i++) {
+			 	total = total + marks[i];
+
+			 	
+			 }
+			avg = total / marks.length;
+			if (avg > 40) {
+				grade = 'Passed';
+			} else {
+				grade = "You have a surprise";
+			}
+			console.log("Student details");
+			console.log("Name " + sname);
+			console.log("age " + age);
+			console.log("Marks total " + total);
+			console.log("Average " + avg);
+		</script>
+	</body>
+</html>

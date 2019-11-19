@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>	
+		<script type="text/javascript">
+			var currentDate = new Date();
+			var  months = ["Jan", "Feb", "mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "dec"]
+			// var myDob  = new Date("Thu Nov 25 2000 09:15:31")
+			console.log(currentDate);
+			console.log(currentDate.getFullYear())
+			var monthIndex = currentDate.getMonth()
+			console.log(months[monthIndex]);
+			console.log("DAte " +  currentDate.getDate());
+			console.log("Day " +  currentDate.getDay());
+
+			var reqFormat = months[monthIndex] + '/'  + currentDate.getDay() + '/' + currentDate.getFullYear();
+			console.log(reqFormat);
+		</script>
+	</body>
+</html>

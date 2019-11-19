@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Case Control Structure.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a1 = prompt("enter first value");
+			a1 =  parseInt(a1);
+			var a2 = prompt("enter first value");
+			a2 =  parseInt(a2);
+
+			var userChoice = prompt("enter choice add/mul/div/sub")
+
+			var result = 0;
+
+			/*if (userChoice == 'add') {
+				// adding values.
+				result = a1 + a2;
+				console.log("the  sum is "  + result);
+			} else if (userChoice == 'sub') {
+				// Substracting values.
+				result = a1 - a2;
+				console.log("the Sub is "  + result);
+			} else if (userChoice == 'mul')  {
+				// Multiplication values.
+				result = a1 * a2;
+				console.log("the Mul is "  + result);
+			} else if (userChoice == 'div') {
+				// division  values.
+				result = a1 / a2;
+				console.log("the Division is "  + result);
+			} else {
+				console.log("wrong choice ")
+			} */
+
+			switch(userChoice){
+				case 'add':
+					// adding values.
+					result = a1 + a2;
+					console.log("the  sum is "  + result);
+					break;
+				case 'mul':
+					// Multiplication values.
+					result = a1 * a2;
+					console.log("the Mul is "  + result);
+					break;
+				case 'div':
+					// division  values.
+					result = a1 / a2;
+					console.log("the Division is "  + result);
+					break;
+				case 'sub':
+					// Substracting values.
+					result = a1 - a2;
+					console.log("the Sub is "  + result);
+					break;
+				default: 
+					console.log("wrong choice");
+
+			}
+
+			
+
+			
+		</script>
+	</body>
+</html>

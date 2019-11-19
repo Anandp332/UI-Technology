@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var  empBasal = prompt("Enter basic Salary");
+			empBasal = parseFloat(empBasal);
+			var gender = prompt("enter user gender");
+			var pf = (empBasal * 14)/ 100;
+			var hra = (empBasal * 25)/ 100;
+			var totalSal = pf + hra + empBasal;
+			var taxPercent = 0;
+			if (gender == 'male') {
+				if (totalSal >= 50000){
+					taxPercent = 10;
+				} else if (totalSal >= 30000) {
+					taxPercent = 5;
+				}
+			} else {
+				// this is for female 
+				if (totalSal >= 50000) {
+					taxPercent = 5;
+				}
+			}
+			var taxValue = 0;
+			if (taxPercent != 0) {
+				taxValue = (totalSal * taxPercent)/100;
+			}
+
+			var FinalSal = totalSal - taxValue;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Scope of variable
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = 10;
+			var b = 40;
+			function readData() {
+				var a = 400;
+				b = 30;
+				var result = a + b;
+				console.log("the sum is " + result);	
+			}
+			readData();
+			console.log("a value is " + a);
+
+		</script>
+	</body>
+</html>

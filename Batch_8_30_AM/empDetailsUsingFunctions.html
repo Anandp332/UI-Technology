@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html>
+	 <head>
+	 	<title>
+	 		Demonstrating employee details using functions
+	 	</title>
+	 </head>
+	 <body>
+	 	<script type="text/javascript">
+	 		function readEmpDetails() {
+	 			var empName = prompt("enter emp name");
+	 			var gender = prompt("enter gender");
+	 			var bsal = prompt("enter basic salary");
+	 			bsal = parseInt(bsal);
+	 			var pf, hra;
+	 			pf = getPf(bsal);
+	 			hra = getHRA(bsal);
+	 			var totSal = getTotalSalary(hra, bsal, pf);
+	 			var totalSalAfterTax = getTotalTax(totSal,  gender);
+	 			displayData(empName, gender, totalSalAfterTax);
+	 		}
+
+	 		function getPf(bsalary) {
+	 			var pf = (bsalary * 14 ) / 100;
+	 			return pf;
+	 		}
+
+	 		function getHRA(bsalary) {
+	 			var hra = (bsalary * 25 ) / 100;
+	 			return hra;
+	 		}
+	 		function getTotalSalary(hra, basicSal, pf) {
+	 			var totalSal = hra + basicSal + pf;
+	 			return totalSal;
+	 		}
+
+	 		function getTotalTax(totSal, gender) {
+	 			var taxPercent;
+	 			if (gender == 'Male') {
+	 				taxPercent = 10;
+	 			} else {
+	 				taxPercent = 5;
+	 			}
+	 			var  taxValue = (totSal *  taxPercent) / 100;
+	 			var  totalSalAfterTaxDeductions = totSal - taxValue;
+	 			return totalSalAfterTaxDeductions;
+	 		}
+
+	 		function displayData(empName, gender, totalSalAfterTax) {
+	 			console.log("name is " + empName);
+	 			console.log("Gender is " + gender);
+	 			console.log("Total salary " +  totalSalAfterTax);
+	 		}
+	 		readEmpDetails();
+	 	</script>
+	 </body>
+ </html>

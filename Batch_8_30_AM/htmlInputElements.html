@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating HTML Input elements.
+		</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+	<body>
+		<form action="http://www.abcsample.com/data" method="POST">
+			<ul>
+				<li>
+					<label  for="uname">
+						Enter user name:
+					</label>
+					<input type="text" name="uname">
+				</li>
+				<li>
+					<label for="upwd">
+						Enter account Pwd: 
+					</label>
+					<input type="password" name="upwd">
+				</li>
+				<li>
+					Country: 
+					<select name="ucountry">
+						<option>|India</option>
+						<option>|India</option>
+						<option>|India</option>
+
+					</select>
+				</li>
+				<li>
+					Gender: 
+					<input type="radio" name="ugender"  checked="true"> M 
+					<input type="radio" name="ugender"> F
+				</li>
+				<li>
+					Expert languages: 
+					<input  type="checkbox" name="lng_eng"> Eng
+					<input  type="checkbox" name="lng_hin"> Hindi
+					<input  type="checkbox" name="lng_tel"> Telugu
+
+				</li>
+				<li>
+					Tell about urself <textarea  maxlength="" rows="" cols="" name="aboutu"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Click/Save">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>

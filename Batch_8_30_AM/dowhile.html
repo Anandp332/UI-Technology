@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log("welcome to game");
+			var winningPoints = 0;
+			var isGameDone;
+			var pickCoin;
+			do {
+				pickCoin = prompt("pick a coin b twn 1 to 10");
+				if (pickCoin == 3 || pickCoin == 7 || pickCoin == 9){
+					isGameDone = false;
+					winningPoints += 10;
+					console.log("you won this round");
+					console.log("go for next")
+				} else {
+					isGameDone = true;
+				}
+
+			}while (isGameDone == false);
+			console.log("winningPoints " + winningPoints);
+			console.log("thanks for playing game");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating CSS Priorities
+		</title>
+		<style type="text/css">
+			#block {
+				color: #fff;
+				font-size: 25px;
+			}
+			.container {
+				font-size: 20px !important;
+			}
+			div {
+				width: 300px;
+				border: 2px solid red;
+				font-size: 30px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container" id="block" style="background: blue;">
+			Hello all, Very good morning to every one.
+		</div>
+	</body>
+</html>

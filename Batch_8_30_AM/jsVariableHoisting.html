@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Variable Hoisting
+		</title>
+	</head>
+	<body>
+		<div>Variable Hoisting</div>
+		<script type="text/javascript">
+			var a = 10;
+			console.log("hellow");
+			var b  = 90;
+			console.log(a);
+			console.log(b);
+			console.log(z);
+			var z = 100;
+
+			var a, b, z;
+			a = 10;
+			console.log("hellow");
+			b  = 90;
+			console.log(a);
+			console.log(b);
+			console.log(z);
+			z = 100;
+		</script>
+	</body>
+</html>

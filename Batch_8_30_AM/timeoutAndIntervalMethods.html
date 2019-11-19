@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Timeout and interval methods.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var count = 0;
+			console.log("welcome to our page");
+
+			var msgIntervl = setInterval(function (){
+				count++;
+				console.log("thq for visiting our web page " + count);
+				if (count == 3) {
+					clearInterval(msgIntervl);
+				}
+			}, 5000);
+				
+
+
+			console.log("Done with job");
+			/*
+			setTimeout(showWlcmMsg, 5000);
+			function showWlcmMsg() {
+				console.log("thq for visiting our web page");	
+			} 
+			*/
+		</script>
+	</body>
+</html>

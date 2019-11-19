@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Exploring more DHTML operations
+		</title>
+		<style type="text/css">
+			#parentElement {
+				 border: 2px solid;
+				 margin: 20px;
+				 padding: 40px;
+			}
+			#container {
+				position: absolute;
+				right: 10px;
+				width: 300px;
+				bottom: 10px;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parentElement">
+			
+		</div>
+		<div id="container" style="border: 1px solid;"> </div>
+		<script type="text/javascript">
+			var divTag = document.createElement("div");
+			divTag.setAttribute("id", "sample");
+			divTag.setAttribute("name", "test");
+			divTag.setAttribute("class", "pqr");
+			divTag.innerHTML = "Hello all...";
+			divTag.style.border = "1px solid";
+			divTag.style.background = "Blue ";
+			console.log(divTag);
+
+			var div = document.createElement("div");
+			div.innerHTML = "Sample div";
+			div.style.color = "blue";
+			div.style.background = 'yellow';
+			document.getElementById("parentElement").append(divTag)
+			document.getElementById("container").append(div);
+		</script>
+	</body>
+</html>

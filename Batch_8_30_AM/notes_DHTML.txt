@@ -1,0 +1,32 @@
+"addEventListener"
+
+Syntax:
+
+	element.addEventListener("type of event", <callback method>)
+
+
+
+
+window and document
+The two predefined objects  been supported in JS usin g  through which we could perform anytype of operation on any html element on its corresponding CSS properties
+
+Following are the different ways we could refer a DOM  elment on a page:
+
+document.getElementById()    - using which we could refer to a DOM  element on page using it's unique ID
+
+document.getElementByClassName()    - using which we could refer to a DOM  element on page using its class name
+
+document.getElementByTagName()    - using which we could refer to a DOM  element on page using it's tag name
+
+document.querySelector()    -  A  method   been supported     from HTML5   using which we can refer   to any DOM  element dynamically using JS  
+
+Following are the methods can be applied on elements references:
+
+• element.setAttribute("attributeName","value")                    - using which we could be able to set any  any attribute dynamically to a DOM element 
+ 
+• element.getAttribute("attributeName") -  Using which we can get corresponding attribute value of any DOM element  
+
+• element.style -  using which dynamically any CSS property of any DOM  element  can be retrieved or updated
+
+• element.appendChild(<element> ) - using which we could able to append an element to an existing DOM element on page
+/                                

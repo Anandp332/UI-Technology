@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating JSON object
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var ename = "Prasad";
+			// var sname = "raj";
+			var eDep = "IT";
+			// var age = 30;
+			/*var loc = "Hyderabad";
+			var marks = [34, 44, 55, 56];
+			var  total = 0;
+			var avg = 0;  */
+
+			//var sDetails = [ 30,"Raj",  "Hyderbad", [34, 44, 55, 56], 0, 0];
+
+			var sDetails = {
+				age: 40,
+				'total': 0,
+				avg: 0,
+				"uname": 'Raj',
+				marks: [34, 44, 55, 56],
+				'location': 'Hyderabad'
+			};
+
+
+// var studentDetails = [ {"name": "raj", 'age':20}, {"name": "teena", 'age':10}, {}];
+
+// studentDetails[1].name
+
+			console.log(sDetails);
+
+			for(var i = 0 ; i < sDetails.marks.length; i++) {
+				sDetails.total += sDetails.marks[i];
+			}
+
+			sDetails.avg = sDetails.total / sDetails.marks.length;
+
+			console.log("name is " + sDetails['uname']);
+			console.log("location is " + sDetails.location);
+			 console.log("Avg is " + sDetails["avg"]);
+		</script>
+	</body>
+</html>

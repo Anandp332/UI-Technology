@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Js functions
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var result;
+			var a = prompt("enter first value");
+			var b = prompt("enter second value");
+			a = parseInt(a);
+			b = parseInt(b);
+
+			function addValues() {
+				result = a + b;
+				console.log("Sum is " + result);
+			}
+
+			function multiplicationValues(){
+				result = a * b;
+				console.log("M ultiplication is " + result);
+			}
+
+			function subValues(){
+				result = a - b;
+				console.log("Substraction  is " + result);
+			}
+
+			function divisionValues() {
+				result = a / b;
+				console.log("Division is " + result);
+			}
+		
+			addValues();
+			multiplicationValues();
+			subValues();
+			divisionValues();
+		</script>
+	</body>
+</html>

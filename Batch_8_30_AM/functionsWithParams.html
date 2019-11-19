@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating functions with params
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function getTotalSal() {
+				var gender = 'Male';
+				var bsal = 3000;
+				var empname = "Prasad";
+				
+				var TotalSal;
+				var pf = ( bsal * 14 ) / 100;
+				var hra = ( bsal * 25 ) / 100;
+				TotalSal = bsal + hra + pf;
+				console.log("total salary  " + TotalSal);
+				var result = getTotalTax(TotalSal, gender);
+				console.log("ur total salary after tax deductions " + result);
+			}
+
+			function getTotalTax(TotalSal, empGender) {
+				var taxValue;
+				if (empGender == 'Male') {
+					if (TotalSal > 20000) {
+						taxValue = 10;
+					} else {
+						taxValue = 5;
+					}
+				} else {
+					taxValue = 5;
+				}
+				var taxAmount = (TotalSal * taxValue) / 100;
+				var TotalSalAfterTax = TotalSal - taxAmount;
+				
+				 return TotalSalAfterTax;
+				
+			}
+
+			function showInsurenceMsg() {
+				console.log("please take insurence...");
+				console.log("TotalSa  l  " + TotalSal);
+			}
+			getTotalSal();
+			showInsurenceMsg();
+		</script>
+	</body>
+</html>

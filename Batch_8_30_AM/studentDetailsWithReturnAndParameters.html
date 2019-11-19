@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function readUserInfo() {
+				var sname = prompt("enter name "  );
+				var age = prompt("Student age "  );
+				var marks = [];
+				var grade;
+				var total, Avg;
+				for (var i = 0 ; i < 3; i++) {
+					marks[i] = prompt("entr for suject " + i);
+					marks[i] = parseInt(marks[i]);
+				}
+				var data = getTotalAndAvg(marks);
+				Avg = data[1];
+				total = data[0];
+				grade = getGrade(Avg);
+				displayGradeCard(sname, age, total, grade);
+			}
+
+			function getTotalAndAvg(marks) {
+				var avg, total = 0;
+				for (var i = 0 ; i < marks.length; i++) {
+					total += marks[i];
+				}
+				console.log("total is " + total);
+				avg = total / marks.length;
+				var data = [total, avg]
+				return data;
+			}
+
+			function getGrade(avg) {
+				var grade = '';
+				if (avg > 40) {
+					grade = 'Passed';
+				} else {
+					grade = "Surprise";
+				}
+				return grade;
+			}
+			function displayGradeCard(name, age, tot, grade) {
+				console.log("Student name is " + name);
+				console.log("Student age is " + age );
+				console.log("Total " + tot);
+				console.log("Grade " + grade);
+			}
+			readUserInfo();
+		</script>
+	</body>
+</html>

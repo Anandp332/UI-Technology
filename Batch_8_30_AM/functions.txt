@@ -1,0 +1,16 @@
+Scope of a variable:
+
+	The scope of a variable specifies the acccessability level of a variable. The scope  can be either local or global
+
+Local/Private Data:  Data been declared in any module , becomes private data and it cannot be accessable outside of particular module.
+
+Global/Public Data: Data which is declared outside of modules becomes public/global data, which can be accessable anywhere with in the same application.
+
+
+Following are different indirect ways we could access private data of functions ouside of function 
+
+1. Passing values as parameters
+2. Returing values from functions
+3. Both passing parameters and returning values.
+
+

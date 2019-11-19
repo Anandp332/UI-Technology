@@ -1,0 +1,24 @@
+Predefined Date object
+
+"Date" is a predefined class been supported in javscript, using which we could able to work with current systems data or user specified custom date.
+
+	Syntax:
+
+		var date = new Date(); // Gets reference of current systems date
+
+		(or)
+
+		var customDate = new Date(<custom date>) ; // Gets reference of user specified custom date.
+
+Following are the predefined methods can be applied on date object
+
+.getMonth() - Returns value between 0 to 11
+.getDate()  - Returns value between 1 to 31
+.getMinutes() - Returns value between 1 to 60
+.getDay() - Returns value btween 0 to 6
+.getSeconds()
+.getHours()
+.getMilliSeconds()
+.getFullYear()
+
+etc.
