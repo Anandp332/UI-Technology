@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating sttudent registration details...
+		</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+		
+		<script type="text/javascript" src="lib/jquery.js"></script>
+		<script type="text/javascript" src="lib/jquery.loadTemplate-1.4.4.min.js"></script>
+		<script type="text/javascript" src="appstudent.js"></script>
+
+	</head>
+	<body>
+		<div class="link" onclick="showRegisterdStudents()">View all</div>
+		<div class="title">
+			Student Registration page
+		</div>
+		<ul>
+			<li>
+				Student Name: <input type="text" id="uname"> 
+			</li>
+			<li>
+				Student Age: <input type="text" id="uage">
+			</li>
+			<li>
+				Country: 
+				<select id="ucountry">
+					<option>India</option>
+					<option>Japan</option>
+					<option>China</option>
+					<option>Pakisthan</option>
+				</select>
+			</li>
+			<li>
+				<input type="button" value="Register" onclick="readUserData()">
+			</li>
+		</ul>
+		<div class="showDetails">
+			<div class="title">Students got registered</div>
+			<table cellspacing="10" cellpadding="10">
+				<thead>
+					<tr>
+						<th>Sno.</th>
+						<th>Student Name</th>
+						<th>Age</th>
+						<th>Location </th>
+					</tr>
+				</thead>
+				<tbody id="viewData">
+					
+				</tbody>
+			</table>
+		</div>
+		<script id="recordRow">
+			<tr>
+				<td data-content="index"></td>
+				<td data-content="name"></td>
+				<td data-content="age"></td>
+				<td data-content="country"></td>
+			</tr>
+		</script>
+	</body>
+</html>
