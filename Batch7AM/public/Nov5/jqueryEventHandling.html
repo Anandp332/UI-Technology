@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Jquery Selectors
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+	</head>
+	<body>
+		<input type="button" value="Apply Changes" >
+		<script type="text/javascript">
+			function applyChanges() {
+				alert("test")
+			}
+
+			/*$("input").mouseover(function(){
+			 	applyChanges();
+			})  */
+			/*var eventType = 'click';
+
+			if (true) {
+				eventType = 'click'
+			} else {
+				eventType = "hover"
+			}
+			$("input").on(eventType, function(){
+				alert("hello")
+			}) */
+
+			$("input").on({
+				"click": function(){
+					console.log("click is fired");
+				},
+				"mouseover": function(){
+					console.log("mouse over is fired");
+				}
+			});
+		</script>
+	</body>
+</html>

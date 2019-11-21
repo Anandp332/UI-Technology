@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Pseodo Elements
+		</title>
+		<style type="text/css">
+			.newsContent::first-line {
+				font-size: 20px;
+				background: yellow;
+				font-weight: bold;
+			}
+			.newsContent::after {
+				content: "Continue reading from our main page....";
+				color: blue;
+				text-decoration: underline;
+
+			}
+			.liveNws::before {
+				content: "live News";
+			}
+		</style>
+	</head>
+	<body>
+		<h2>News Item 1:</h2>
+		<p  class="newsContent">Properties that would otherwise have no color or be transparent cannot be modified with :visited. Of the properties that can be set with this pseudo-class, your browser probably has a default value for color and column-rule-color only. Thus, if you want to modify the otherwiseProperties that would otherwise have no color or be transparent cannot be modified with :visited. Of the properties that can be set with this pseudo-class, your browser probably has a default value for color and column-rule-color only. Thus, if you want to modify the otherwiseProperties </p>
+		<h2>News Item 1:</h2>
+		<p  class="newsContent liveNws" >Properties that would otherwise have no color or be transparent cannot be modified with :visited. Of the properties that can be set with this pseudo-class, your browser p obably has a default value for color and column-rule-color only. Thus, if you want to modify the otherwiseProperties that would otherwise have no color or be transparent cannot be modified with :visited. Of the properties that can be set with this pseudo-class, your browser probably has a default value for color and column-rule-color only. Thus, if you want to modify the otherwiseProperties </p>
+		<h2>News Item 1:</h2>
+		<p  class="newsContent">Properties that would otherwise have no color or be transparent cannot be modified with :visited. Of the properties that can be set with this pseudo-class, your browser probably has a default value for color and column-rule-color only. Thus, if you want to modify the otherwiseProperties that would otherwise have no color or be transparent cannot be modified with :visited. Of the properties that can be set with this pseudo-class, your browser probably has a default value for color and column-rule-color only. Thus, if you want to modify the otherwiseProperties </p>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Jquery Animation Methods
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<style type="text/css">
+			.block {
+				border: 2px solid;
+				background: green;
+				text-align: center;
+				margin: 20px;
+				padding: 20px;
+				width: 120px;
+				height: 120px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Slide up" onclick="doOperation('up')">
+		<input type="button" value="Slide Down" onclick="doOperation('dwn')">
+		<input type="button" value="Toggle slide" onclick="doOperation('tog')">
+		<div class="block">
+			Container
+		</div>
+		<script type="text/javascript">
+			function doOperation(type) {
+				switch (type) {
+					case 'up':
+						$(".block").slideUp(2000);
+						break;
+					case 'dwn':
+						$(".block").slideDown(5000 , function(){
+							alert("am done")
+						});
+						break;
+					case 'tog':
+						$(".block").slideToggle(200);
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>

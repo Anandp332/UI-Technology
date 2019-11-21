@@ -1,0 +1,35 @@
+
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.block {
+				background: green;
+				width: 200px;
+				height: 120px;
+			}
+			.sample {
+				border: 2px solid;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>	
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<div id="container" class="sample">
+			Hello all
+		</div>
+		<input type="button" value="Apply" onclick="applyClasses()">
+		<script type="text/javascript">
+		
+			function applyClasses() {
+				/*var container = document.querySelector("#container");
+				var existingClass = container.getAttribute('class');
+				var classNames = existingClass + ' block';
+				container.setAttribute("class", classNames);
+	*/
+				$("#container").addClass('block');
+			}
+		</script>
+	</body>
+</html>

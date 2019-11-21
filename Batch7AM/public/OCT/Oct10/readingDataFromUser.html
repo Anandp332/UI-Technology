@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating  reading data from user.
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				background: #ccc;
+				height: 300px;
+				width: 400px;
+				margin: 20px auto;
+			}
+			li {
+				list-style: none;
+				border: 1px solid;
+				margin: 2px;
+				padding: 5px;
+				background: #fff;
+			}
+			ul {
+				padding: 0;
+				margin: 0;
+			}
+			h3 {
+				 text-align: center;
+			}
+			.resultContainer { 
+				display: none;
+			}
+		
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<ul>
+				<li>
+					<h3>Adding Values</h3>
+				</li>
+				<li>
+					Enter first value <input type="text" id="fval">
+				</li>
+				<li>
+					Enter second value <input type="text" id="sval">
+				</li>
+				<li>
+					<input type="button" value="ADD" onclick="addValues()">
+				</li> 
+				<li  class="resultContainer">
+					The sum is: <span class="rBlock"></span>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			function addValues() {
+				console.log(document);
+				var fValue = document.querySelector('#fval').value; 
+				fValue = parseInt(fValue);
+				var sValue = document.querySelector('#sval').value;
+				sValue = parseInt(sValue);
+				var result = fValue + sValue;
+				document.querySelector(".rBlock").innerHTML = result;
+
+				document.querySelector(".resultContainer").style.display = 'block';
+				document.querySelector(".resultContainer").style.background = 'red';
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+{	
+	"pDetails": [
+		{
+			"name": "Smart Mobile",
+			"price": 500,
+			"manu": "HTC",
+			"image": "https://assets.mspimages.in/wp-content/uploads/2019/03/Redmi-7-2-696x435.jpg"
+		},
+		{
+			"name": "Marker",
+			"price": 200,
+			"manu": "Camlin",
+			"image": "https://assets.mspimages.in/wp-content/uploads/2019/03/Redmi-7-2-696x435.jpg"
+		},
+		{
+			"name": "Bag",
+			"price": 1900,
+			"manu": "Wildcraft",
+			"image": "https://assets.mspimages.in/wp-content/uploads/2019/03/Redmi-7-2-696x435.jpg"
+		}
+	]
+}

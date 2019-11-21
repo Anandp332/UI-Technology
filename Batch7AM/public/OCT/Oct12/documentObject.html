@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating document object
+		</title>
+		<style type="text/css">
+			.sample {
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="abc">Hello All</div>
+		<div  id="content" class="abc">bye all</div>
+		<script type="text/javascript">
+			var idvalue;
+			var msg = "Very good morning";
+			var element = document.querySelector(".abc");
+			element.setAttribute("id", "idvalue");
+			element.setAttribute("class", "sample test pqr");
+			element.innerHTML = msg;
+			element.style.border = "1px solid blue";
+		</script>
+	</body>
+</html>

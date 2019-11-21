@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Jquery Animation Methods
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<style type="text/css">
+			.block {
+				border: 2px solid;
+				background: green;
+				text-align: center;
+				margin: 20px;
+				padding: 20px;
+				width: 120px;
+				height: 120px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Show" onclick="doOperation('show')">
+		<input type="button" value="Hide" onclick="doOperation('hide')">
+		<input type="button" value="Toggle" onclick="doOperation('tog')">
+		<div class="block">
+			Container
+		</div>
+		<script type="text/javascript">
+			function doOperation(type) {
+				switch (type) {
+					case 'show':
+						$(".block").show(2000);
+						break;
+					case 'hide':
+						$(".block").hide(5000 , function(){
+							alert("am done")
+						});
+						break;
+					case 'tog':
+						$(".block").toggle();
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>

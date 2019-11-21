@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Jquery Animation Methods
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<style type="text/css">
+			.block {
+				border: 2px solid;
+				background: green;
+				text-align: center;
+				margin: 20px;
+				padding: 20px;
+				width: 120px;
+				height: 120px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Fade In" onclick="doOperation('in')">
+		<input type="button" value="Fade out" onclick="doOperation('out')">
+		<input type="button" value="Toggle Fade" onclick="doOperation('tog')">
+		<div class="block">
+			Container
+		</div>
+		<script type="text/javascript">
+			function doOperation(type) {
+				switch (type) {
+					case 'in':
+						$(".block").fadeIn(2000);
+						break;
+					case 'out':
+						$(".block").fadeOut(5000 );
+						break;
+					case 'tog':
+						$(".block").fadeToggle(6000);
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>

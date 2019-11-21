@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Validating Data
+		</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<script type="text/javascript" src="validations.js"></script>
+	</head>
+	<body>
+		<ul>
+			<li class="title">
+				User Registration page
+			</li>
+			<li>
+				Enter user name: <input type="text" id="uname">
+				<div class="nameErr error">*Name cannot be left blank</div>
+			</li>
+			<li>
+				Enter account password: <input type="password" id="upwd">
+			</li>
+			<li>
+				Renter accound password: <input type="password" id="rPwd">
+				<div class="error pwdMisMatch">
+					Both passwords should be equal
+				</div>
+			</li>
+			<li>
+				Enter user age: <input type="text" id="uage">
+			</li>
+			<li>
+				Gender: 
+				<input type="radio" name="gender"> M 
+				<input type="radio" name="gender"> F 
+			</li>
+			<li>
+				Languages: <input type="checkbox">English
+				<input type="checkbox">Telugu
+				<input type="checkbox">Hindi
+			</li>
+			<li>
+				Country: 
+				<select id="country">
+					<option>India</option>
+					<option>China</option>
+					<option>Japan</option>
+					<option>USA</option>
+					<option>PAk</option>
+				</select>
+			</li>
+			<li>
+				<input type="button" value="Register"  onclick="registerDetails()">
+			</li>
+		</ul>
+	</body>
+</html>

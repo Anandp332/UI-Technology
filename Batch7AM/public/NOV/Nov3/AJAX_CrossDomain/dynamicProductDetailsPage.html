@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Product Details Page using Javascript
+		</title>
+		<script type="text/javascript" src="../../lib/jquery.mini.js"></script>
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<script type="text/javascript" src="renderProdDetails.js"></script>
+	</head>
+	<body>
+		<div class="loadingBlock">
+			<img src="https://loading.io/spinners/dna/lg.dna-spin-spiral-preloader.gif" />
+		</div>
+
+		<input type="button" value="Get Product Details" onclick="getProductDetails()">
+		<div class="title">
+			Product Details
+		</div>
+		<div class="container">
+			<div class="errorBlock">
+				Error while communicating to Server,  try after some time
+			</div>
+		</div>
+	</body>
+</html>

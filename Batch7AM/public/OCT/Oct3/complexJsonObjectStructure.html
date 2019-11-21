@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating complex json object
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			contactDetails.sname
+			contactDetails.contactNumber.persnl[1]
+			contactDetails.address.office.state
+			var contactDetails = {
+				fname: 'Raj',
+				'sname': 'Kapoor',
+				contactNumber: {
+					persnl: [214234,234 , 23423],
+					offtl: [2423432, 23423423] 
+				},
+				mailID: {
+					office: 'abc@office.com',
+					prsnl: ['abc@gmail.com', 'raj@yahoo.com']
+				},
+				pic: 'abc.png',
+				address: {
+					office: {
+						country: 'India',
+						state: 'Hyd'
+					},
+					persnl: {
+						dno: '158',
+						location: 'Hyd'
+					}
+				},
+				gender: 'Male',
+				socialNtId: {
+					fb:'abc.',
+					twitter: 'test1',
+					linkedin:'test2'
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var count = 0;
+			var job1 = setInterval(function(){
+				count++;
+				console.log("JOB1 " + count);
+				if (count == 5) {
+					clearInterval(job1);
+				}
+			}, 500);
+			var job2 = setInterval(function(){
+				console.log("JOB2");
+			}, 3500);
+
+			//clearInterval(job1);
+		</script>
+	</body>
+</html>

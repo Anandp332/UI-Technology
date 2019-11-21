@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating All jquery Selectors
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<style type="text/css">
+			table,  tr, td, th {
+				border: 1px solid;
+			}
+			.rowContent {
+				background: green;
+			}
+			.rowContent2 {
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<span>JUNK code</span>
+		<input type="button" value="highlight" onclick="highlightElements()">
+
+		<div>
+			<span>item1</span>
+			<span>item2</span>
+			<span>item3</span>
+			<span>item4</span>
+
+		</div>
+		<table cellpadding="10" cellspacing="10">
+			<thead>
+				<tr>
+					<th>sno</th>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Gender</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1</td>
+				<td>Raj</td>
+				<td>20</td>
+				<td>male</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Raj</td>
+				<td>20</td>
+				<td>male</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Raj</td>
+				<td>20</td>
+				<td>male</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Raj</td>
+				<td>20</td>
+				<td>male</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Raj</td>
+				<td>20</td>
+				<td>male</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			function highlightElements() {
+				// $("span:eq(2)").css("background",'blue');
+				 $("span:first-child").css("background",'yellow');
+				//$("tr:even").addClass("rowContent");
+				//$("tr:odd").addClass("rowContent2");
+				$("tr:eq(2)").addClass("rowContent2");
+			}
+		</script>
+	</body>
+</html>

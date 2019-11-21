@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Static Event Handling
+		</title>
+	</head>
+	<body>
+		<div onclick="addValues();">Click </div>
+		<!-- <input type="button" value="Do Addition" onclick="addValues()"> -->
+		<input type="button" value="Do Multiplication" onmouseover="mulValues()">
+		<script type="text/javascript">
+			var a = prompt("enter first value");
+			var b = prompt("enter second value");
+			a = parseInt(a);
+			b = parseInt(b);
+			function addValues() {
+				var result = a + b;
+				console.log("the sum is " + result);
+			}
+
+			function mulValues() {
+				var result;
+				result = a * b;
+				console.log("the mul is " + result)
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function UserDetails(sname, sage) {
+				this.name = sname;
+				this.age =  sage;
+				this.displayData = function() {
+					console.log("name is " + this.name);
+					console.log("age is " + this.age);
+				}
+			}
+			var data = new UserDetails("Raj", 30);
+			console.log(data);
+
+			var data1 = new UserDetails("Prasad", 80);
+			console.log(data1);
+			
+
+
+		</script>
+	</body>
+</html>

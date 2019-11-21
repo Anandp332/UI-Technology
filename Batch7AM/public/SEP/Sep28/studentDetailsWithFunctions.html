@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Student details with functions
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var sname, sage, marks, total, avg, grade;
+			function readStudentDetails() {
+				sname = prompt("enter student name");
+				sage = prompt("etner age");
+				marks = [];
+				for (var i = 0; i < 5 ;i++) {
+					marks[i] = prompt("enter sub " + (i + 1)+ " marks");	
+					marks[i] = parseInt(marks[i]);
+				}
+				getTotalAndAvg();
+			}
+			function getTotalAndAvg() {
+				total = 0;
+				for (var i = 0; i < marks.length; i++) {
+					total += marks[i];
+				}
+				avg = total/marks.length;
+				getGrade();
+			}
+
+			function  gtgrd() {
+				if (avg >= 40) {
+					grade = 'Passed';
+				} else {
+					grade =  'You have surprise';
+				}
+			}
+
+			function display_Data() {
+				readStudentDetails();
+				console.log("Student Details");
+				console.log("Student name " + sname);
+				console.log("AGe " + sage);
+				console.log("Total " +  total);
+				console.log("avg " + avg);
+				console.log("Grade " + grade);
+			}
+			
+			displayData();
+		</script>
+	</body>
+</html>

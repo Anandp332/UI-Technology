@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating jquery Methods.
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<style type="text/css">
+			.block {
+				border: 2px solid;
+				margin: 10px;
+				text-align: center;
+				width: 200px;
+				height: 200px;
+			}
+			.highlight{
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Apply" onclick="applyChanges()">
+		<div class="block"></div>
+		<script type="text/javascript">
+			function applyChanges() {
+				// $("div").toggleClass('highlight')
+				$("div").toggle()
+				/*  if ($("div").hasClass("highlight")) {
+					$("div").removeClass("highlight");
+				} else {
+					$("div").addClass("highlight");
+				} */
+
+				console.log($("div").attr("class"));
+				console.log($("div"));
+
+				$("#abc").html("<b>hello</b>")
+
+				$("#abc").html()
+
+				$("input").val();
+				$("input").val("hello");
+			}
+		</script>
+	</body>
+</html>

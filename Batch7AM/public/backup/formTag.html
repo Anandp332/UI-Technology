@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			From tag
+		</title>
+		<style type="text/css">
+			li	{
+				list-style:  none;
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>F orm tag</h3>
+		<form action="http://abcserverdemo.com/senddata" method="POST">
+			<ul>
+				<li>
+					Enter user name <input type="text" name="uname">
+				</li>
+				<li>
+					User age <input type="text"  name="uage">
+				</li>
+				<li>
+					Account PWd <input type="password" name="acntpwd">
+				</li>
+				<li>
+					country: 
+					<select name="uCountry">
+						<option>Japan </option>
+						<option>USA</option>
+						<option>China</option>
+						<option>India</option>
+					</select>
+				</li>
+				<li>
+					<input type="submit" value="SAVE">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>

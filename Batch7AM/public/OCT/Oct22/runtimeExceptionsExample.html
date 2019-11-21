@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript" src="app.js"></script>
+		<style type="text/css">
+			.taskContainer {
+				border: 2px solid;
+				background: #ccc;
+				text-decoration: underline;
+				text-align: center;
+				margin: 20px;
+				padding: 30px;
+
+			}
+			#wlcmBlock {
+				width: 400px;
+				height: 200px;
+				background: green;
+				text-decoration: underline;
+				text-align: center;font-size: 20px;
+				display: none;
+				position: absolute;
+				left: 30%;
+				top: 50%;
+			}
+		</style>
+	</head>
+	<body>	
+		<input type="button" value="Create Block" onclick="createBlock()">
+		<input type="button" value="Show My Task" onclick="showTaskToUser()">
+		<div id="container"></div>
+		<div id="wlcmBlock"></div>
+	</body>
+</html>

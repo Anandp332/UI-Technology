@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript" src="../../lib/jquery.js"></script>
+		<script type="text/javascript" src="../../lib/jquery.loadTemplate-1.4.4.min.js"></script>
+		<script type="text/javascript" src="cricApp.js"></script>
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+	<body>
+		<div class="loadingContainer">
+			<img src="http://cdn.lowgif.com/full/8739fe7b66918000-loading-gif-transparent-background-animated-gif.gif" />
+		</div>
+		<input type="button" value="Load Match Details" onclick="loadMatchDetails()">
+		<div class="container">
+			<div class="title">
+				Cricket Match Details...
+			</div>
+			<div class="matchBlock">
+				<div class="subTitle">
+					Match  1 Details
+				</div>
+				<div class="match1Container">
+					
+				</div>
+			</div>
+			<div class="matchBlock">
+				<div class="subTitle">
+					Match 2 Details
+				</div>
+				<div class="match2Container"> </div>
+			</div>
+		</div>
+		<script id="matchTemplate">
+			<ul>
+				<li>
+					Match Type: <span data-content="type"></span>
+				</li>
+				<li>
+					Match Between: <span data-content="betwn"></span>
+				</li>
+				<li>
+					Date: <span data-content="date"></span>
+				</li>
+				<li>
+					Location: <span data-content="location"></span>
+				</li>
+				<li>
+					 Time: <span data-content="time"></span>
+				</li>
+				<li>
+					Stadium Name: <span data-content="stadiumName"></span>
+				</li>
+			</ul>
+		</script>
+	</body>
+</html>

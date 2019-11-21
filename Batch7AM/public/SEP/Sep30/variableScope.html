@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating variable Scope
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function readValues() {				
+				var a,b;
+				a = prompt("enter first value");
+				a = parseInt(a); 
+				b = prompt("enter first value");
+				b = parseInt(b);
+				var result = addValues(a, b);
+				console.log("The sum is " + result);
+			}	
+			
+			function addValues(p1, p2) {
+				var result;
+				result = p2 + p1;
+				return result;
+			}
+			readValues();
+			
+		</script>
+	</body>
+</html>

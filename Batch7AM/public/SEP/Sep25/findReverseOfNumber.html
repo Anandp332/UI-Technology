@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Finding Reverse of number
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var rv = 0;
+			var n = prompt("enter a number");
+			n = parseInt(n);
+			var rem;
+			while(n > 0){
+				rem = n % 10;
+				n = n / 10;
+				n = parseInt(n); // converting decimal to number.
+				rv = (rv * 10) + rem;
+			}
+			console.log("Reverse o fnu mber is " + rv)
+		</script>
+	</body>
+</html>

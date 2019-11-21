@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var sname = 'RAj';
+			var gender = 'Male';
+			
+			var marks = [99, 33,  `66, 55, 23, 44, 55];
+			console.log(marks.length);
+
+			//var total = marks[0] + marks[1] + marks[2] + marks[3] + marks[4];
+			var total = 0;
+			for (var i = 0; i <marks.length; i++) {
+				 total = total + marks[i];
+			}
+
+			var avg = total / marks.length;
+			console.log("student details");
+			console.log("student name is " +  sname);
+			console.log("Student  total " + total);
+			console.log("Avg marks " + avg);
+ 
+		</script>
+	</body>
+</html>
