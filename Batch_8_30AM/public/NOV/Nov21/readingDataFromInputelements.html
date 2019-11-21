@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating samples to read data from user.
+		</title>
+		<style type="text/css">
+			.resultBlock {
+				border: 2px solid;
+				margin: 10px;
+				padding: 10px;
+				display: none;
+			}
+			li {
+				list-style: none;
+				margin: 10px;
+				padding: 10px;
+				border: 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>
+					Enter first number <input type="text" id="fval">
+				</li>
+				<li>
+					Enter second number <input type="text" id="sval">
+				</li>
+				<li>
+					<input type="button" value="Add Values" onclick="doAddition();">
+				</li>
+			</ul>
+		</div>	
+		<div class="resultBlock">
+			The sum is <span></span>
+		</div>
+		<script type="text/javascript">
+			function doAddition() {
+				var a1 = document.querySelector("#fval").value;
+				a1 = parseInt(a1);
+				var a2 = document.querySelector("#sval").value;
+				a2 = parseInt(a2);
+				var result = a1 + a2;
+				
+
+				document.querySelector("span").innerHTML = result;
+
+				document.querySelector(".resultBlock").style.display = 'block';
+			}	
+		</script>
+	</body>
+</html>

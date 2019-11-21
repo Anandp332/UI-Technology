@@ -1,0 +1,19 @@
+Socket Communication Through Node.js
+
+socket.io is a library that enables real time bidirectional and event based Communication
+browser and server. socket.io  provides a predefined node module to handle server side interactions,  
+ it even provides, socket.io.js client side library file. Using which we can handle socket communications
+ at client side. Through sockets it is not a direct communication instead the communication happens through
+ a sub communication (pub & sub - publishing, subscribing). 
+
+ Steps to implement socket at node server:
+ 1. download and include socket.io module
+2. using io.on method configure a call back method which get invoked automatically
+   when there is a connection to the server.
+3. Using the socket object.
+either broadcast or subscring with unique key.
+
+download socket.io.js from github link...
+1. create  io server using socket
+    var socket = io("http://<server-name>: <portnumber>);
+

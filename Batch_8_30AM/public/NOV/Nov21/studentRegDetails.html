@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Student Registration details
+		</title>
+		<link rel="stylesheet" type="text/css" href="sreg.css">
+		<script type="text/javascript" src="sregDetails.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			Student Registrtion page
+		</div>
+		<ul>
+			<li>
+				Enter student Name: <input type="text" id="sname">
+			</li>
+			<li>
+				Enter student Age: <input type="text" id="sage">
+			</li>
+			<li>
+				Gender: 
+				<input type="radio"> M
+				<input type="radio"> F
+			</li>
+			<li>
+				Country: 
+				<select id="sCntry">
+					<option>India</option>
+					<option>China</option>
+					<option>PAK</option>
+				</select>
+			</li>
+			<li>
+				About Yourself: 
+				<textarea id="aboutUser"></textarea>
+			</li>
+			<li>
+				<input type="button" value="Register" onclick="registerDetails()">
+			</li>
+		</ul>
+	</body>
+</html>
