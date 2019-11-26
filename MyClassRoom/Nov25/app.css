@@ -1,0 +1,60 @@
+.tbar,
+.mbar,
+.bbar {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	border: 1px solid;
+	padding: 10px;
+	background: #ccc;
+}
+
+.tbar,
+.bbar {
+	text-align: center;
+}
+
+.bbar {
+	bottom: 10px;
+}
+
+.mbar {
+	top: 60px;
+	bottom: 60px;
+}
+
+.lblock,
+.rblock {
+	border: 1px solid;
+	height: 480px;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	background: #fff;
+	overflow: auto;
+}
+.lblock {
+	width: 25%;
+}
+.rblock {
+	width: 65%;
+}
+
+li{
+	border: 1px solid;
+	margin: 10px;
+	padding: 10px;
+	list-style: none;
+}
+
+.block {
+	border: 1px solid;
+	margin: 10px;
+	padding: 10px;
+	height: 150px;
+}
+
+.container img {
+	width: 250px;
+	height: 150px;
+}

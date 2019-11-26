@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			HTML5 Input elements.
+		</title>
+		<style type="text/css">
+			studentRegistrationBlock {
+				display: block;
+				width: 600px;
+				height: 700px;
+				overflow: auto;
+				margin: 20px auto;
+				border: 2px solid
+			}
+		</style>
+	</head>
+	<body>
+		<studentRegistrationBlock class="regBlock">
+			<ul>
+				<li>
+					Enter user name: <input type="text" name="">
+				</li>
+				<li>
+					AGe: <input type="number" name="" max="" maxlength=""> 	
+				</li>
+				<li>
+					Color: <input type="color" name="">
+				</li>
+				<li>
+					Joining Dat : <input type="date">
+				</li>
+				<li>
+					DOB and TOB: <input type="datetime-local" name="">
+				</li>
+				<li>
+					Price Range: 
+					<input type="range" name="" min="1000" max="10000" id="userRange" onchange="showValue()">
+					<span></span>
+				</li>
+			</ul>
+		</studentRegistrationBlock>
+		<script type="text/javascript">
+			function showValue() {
+				var value = document.querySelector("#userRange").value
+				console.log(value);
+				document.querySelector("span").innerHTML = value;
+			}
+		</script>
+	</body>
+</html>

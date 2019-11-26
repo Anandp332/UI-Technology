@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			HTML5 Drag and Drop Features
+		</title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				margin: 20px auto;
+				padding: 10px;
+				height: 400px;
+				width: 500px;
+				position: relative;
+			}
+			img {
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container" ondrop="droppedElement(event)" ondragover="dragGotOver(event)">
+			<div>Drag and drop products in this .</div>
+		</div>
+
+		<img src="https://rukminim1.flixcart.com/image/280/336/jkfr6a80/book/4/9/4/let-us-c-16th-edition-authentic-guide-to-c-programming-language-original-imaf7sh7hyzxs78b.jpeg?q=90" id="book1" ondragstart="dragSarted(event)">
+
+
+		<img src="https://rukminim1.flixcart.com/image/416/416/book/4/4/9/the-c-programming-language-original-imaerfy3gwbcev5d.jpeg?q=70" ondragstart="dragSarted(event)" id="book2">
+
+		<input type="button" value="addelement" onclick="showValues(event)">
+		<script type="text/javascript">
+			var imgTag;
+			var imgTagId;
+			function dragSarted(e) {
+				console.log(e);
+				console.log("ddrag got started");
+				// imgTag = 				document.querySelector("#book2");
+				imgTagId = event.target.getAttribute("id");
+			}
+
+
+			function droppedElement(e) {
+				console.log(e);
+				console.log("Element got drpped");
+				var container = document.querySelector(".container");
+				imgTagId = "#" + imgTagId;
+				imgTag = document.querySelector(imgTagId)
+				//container.append(imgTag);
+				var imgSrc = imgTag.getAttribute("src");
+
+				var newImg = document.createElement("img");
+				newImg.setAttribute("src", imgSrc);
+				newImg.style.height = '170px';
+				newImg.style.width = '170px'
+				container.append(newImg); 
+
+				/*var top = event.layerX;
+				var left = event.layerY;
+				imgTag.style.position = 'absolute';
+				imgTag.style.top = top + 'px';
+				imgTag.style.left = left + 'px';*/
+
+			}
+
+			function dragGotOver(event) {
+				event.preventDefault();
+			}
+
+		</script>
+	</body>
+</html>

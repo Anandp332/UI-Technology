@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating HTML5 Webworkers
+		</title>
+		<style type="text/css">
+			.headBar {
+				border: 1px solid;
+				margin: 10px;
+				padding: 10px;
+				text-align: right;
+			}
+			span {
+				font-weight: bold;
+				color: green;
+			}
+			.container {
+				border: 2px solid;
+				margin: 20px auto;
+				width: 600px;
+				height: 500px;
+				overflow: auto;
+			}
+			.block {
+				border: 1px solid;
+				background: #ccc;
+				margin: 5px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="headBar">
+			Date:&nbsp; <span></span>
+		</div>
+		<div class="container"></div>
+		<script type="text/javascript">
+			var count = 1;
+			
+			setInterval(function(){
+				var div = document.createElement('div');
+				div.setAttribute("class", "block");
+				div.innerHTML = 'Hello all ' + count;
+				document.querySelector(".container").append(div);
+				count++;
+			}, 1000);
+			
+			function showDate() {
+				var date = new Date();
+				document.querySelector("span").innerText = date;
+			}
+			showDate();
+		</script>
+	</body>
+</html>
