@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>
+			Demonstrating localStorage and sessionStorage objects.
+		</title>
+		<style type="text/css">
+			.nameBar {
+				border: 1px solid;
+				margin: 20px;
+				padding: 10px;
+			}
+			.welcmBlock {
+				display: none;
+				margin: 50px;
+				padding: 20px;
+				color: green;
+				text-align: center;
+				border: 2px solid;
+			}
+			.themeSelector {
+				text-align: right;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="themeSelector">
+			Select Theme:
+			<select id="themeName" onchange="getTheme()">
+				<option>Blue</option>
+				<option>Red</option>
+				<option>Green</option>
+				<option>Yellow</option>
+			</select>
+		</div>
+		<div class="nameBar">
+			Enter user name: 
+			<input type="text" id="uName">
+			<input type="button" value="Done" onclick="readData()">
+		</div>
+		<div class="welcmBlock">
+			Hey Mr <span></span>,  Welcome to our page...
+		</div>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
